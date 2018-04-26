@@ -25,6 +25,7 @@ const App = () => (
             <Route path="/property-search"component={PropertySearch} />
             <Route path="/testimonials" component={Testimonials} />
 
+
             <Footer />
         </div>
     </Router>
