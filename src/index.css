@@ -3,3 +3,16 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+h3 {
+  color: #525252;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+    line-height: 1.7em;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
