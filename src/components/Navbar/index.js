@@ -17,8 +17,6 @@ const Navbar = props => (
             <PhoneNumberLinkToContact to="contact">512 669 9649</PhoneNumberLinkToContact>
         </NavbarContainer>
     </NavbarView>
-
-
 )
 
 const NavbarView = styled.div`
