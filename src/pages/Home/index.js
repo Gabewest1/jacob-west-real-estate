@@ -1,44 +1,54 @@
 import React from "react"
-import styled, { ThemeProvider } from "styled-components"
+import styled from "styled-components"
 import Mls from "../../components/Mls"
 import SectionHeader from "../../components/SectionHeader"
 import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
-import HomeTestimonial from "../../components/HomeTestimonial";
-//fsftetetetget
-//feature merge test
-//feature merge test
-//feature merge test
-//feature merge test
-//feature merge test
+import HomeTestimonial from "../../components/HomeTestimonial"
+
 class Home extends React.Component {
     render() {
-        let dick = 'dick'
-        let dick2 = 'dick2'
         return (
             <HomeView {...this.props}>
                 <HeroView>
                     <HeroViewContainer>
-                        <HeroHeader>The search for your new <BoldenWord>home </BoldenWord>starts here.</HeroHeader>
+                        <HeroHeader>
+                            The search for your new <BoldenWord>home </BoldenWord>starts here.
+                        </HeroHeader>
                         <Mls />
-                    </ HeroViewContainer>
+                    </HeroViewContainer>
                 </HeroView>
 
                 <AboutView>
                     <AboutViewContainer>
-                        <SectionHeader blueWord="About" greyWord="Us"/>
+                        <SectionHeader blueWord="About" greyWord="Us" />
 
                         <AboutImgAndTextContainer>
-                             <AboutTextContainer>
+                            <AboutTextContainer>
                                 <h3>Jacob West</h3>
 
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing
+                                     and typesetting industry.
+                                    Lorem Ipsum has been the industry&#39;s
+                                    standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of
+                                    type and scrambled it to make a type
+                                    specimen book. It has survived not only
+                                    five centuries, but also the leap
+                                    into electronic typesetting, remaining essentially unchanged.
+                                </p>
 
-                                <h3 style={ {'marginTop': '32px'} }>Remax Elite®</h3>
+                                <h3 style={{ marginTop: "32px" }}>Remax Elite®</h3>
 
-                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>
+                                    Lorem Ipsum has been the industry&#39;s standard dummy text ever
+                                    since the 1500s, when an unknown printer took a galley of type
+                                    and scrambled it to make a type specimen book.
+                                </p>
+
                             </AboutTextContainer>
                             <ClientImgWrapper>
-                                <ClientImg src="/assets/jacob2.jpg"/>
+                                <ClientImg src="/assets/jacob2.jpg" />
                             </ClientImgWrapper>
                         </AboutImgAndTextContainer>
 
@@ -57,27 +67,26 @@ class Home extends React.Component {
                         </SocialMediaLinksContainer>
                     </AboutViewContainer>
                 </AboutView>
-                
+
                 <TestimonialsView>
                     <TestimonialsViewContainer>
-                        <h3>But don't just take my word for it.</h3>                  
-                        
-                        <TestimonialsAccentHome>
-                        </TestimonialsAccentHome>
+                        <h3>But don&#39;t just take my word for it.</h3>
+
+                        <TestimonialsAccentHome />
 
                         <TestimonialsContainer>
-                          <HomeTestimonial 
-                                clientName="Jane Doe" 
+                            <HomeTestimonial
+                                clientName="Jane Doe"
                                 clientWords="I was incredibly absolutly impressed withon my house within DAYS of listing, just as he hoped to when I signed on with Benefit."
                             />
 
-                            <HomeTestimonial 
-                                clientName="Jane Doe" 
+                            <HomeTestimonial
+                                clientName="Jane Doe"
                                 clientWords="I was incredibly absolutly impressed withon my house within DAYS of listing, just as he hoped to when I signed on with Benefit."
                             />
 
-                            <HomeTestimonial 
-                                clientName="Jane Doe" 
+                            <HomeTestimonial
+                                clientName="Jane Doe"
                                 clientWords="I was incredibly absolutly impressed withon my house within DAYS of listing, just as he hoped to when I signed on with Benefit."
                             />
                         </TestimonialsContainer>
@@ -86,62 +95,65 @@ class Home extends React.Component {
 
                 <FeaturedNeighborhoodsView>
                     <FeaturedNeighborhoodsViewContainer>
-                        <SectionHeader blueWord="Featured" greyWord="Neighborhoods"/>
+                        <SectionHeader blueWord="Featured" greyWord="Neighborhoods" />
 
-                        <p>Property ownership can be a big deal, especially in todays' climate.</p>
+                        <p>
+                            Property ownership can be a big deal, especially in todays&#39; climate.
+                        </p>
 
                         <HoodsContainer>
                             <TopRowContainer>
                                 <HoodWrapper>
-                                    <Hood src="/assets/austin.png"/>
+                                    <Hood src="/assets/austin.png" />
                                 </HoodWrapper>
 
                                 <HoodWrapper>
-                                    <Hood src="/assets/round-rock.png"/>
+                                    <Hood src="/assets/round-rock.png" />
                                 </HoodWrapper>
 
                                 <HoodWrapper>
-                                    <Hood src="/assets/pflug.png"/>
+                                    <Hood src="/assets/pflug.png" />
                                 </HoodWrapper>
 
                                 <HoodWrapper>
-                                    <Hood src="/assets/georgetown.png"/>
+                                    <Hood src="/assets/georgetown.png" />
                                 </HoodWrapper>
                             </TopRowContainer>
 
                             <BottomRowContainer>
                                 <HoodWrapper>
-                                    <Hood src="/assets/round-rock.png"/>
+                                    <Hood src="/assets/round-rock.png" />
                                 </HoodWrapper>
 
                                 <HoodWrapper>
-                                    <Hood src="/assets/austin.png"/>
+                                    <Hood src="/assets/austin.png" />
                                 </HoodWrapper>
 
                                 <HoodWrapper>
-                                    <Hood src="/assets/georgetown.png"/>
+                                    <Hood src="/assets/georgetown.png" />
                                 </HoodWrapper>
 
                                 <HoodWrapper>
-                                    <Hood src="/assets/pflug.png"/>
+                                    <Hood src="/assets/pflug.png" />
                                 </HoodWrapper>
                             </BottomRowContainer>
                         </HoodsContainer>
 
-                        <p style={ {'marginTop': '60px'} }>Property ownership can be a big deal with.</p>
+                        <p style={{ marginTop: "60px" }}>Property ownership can be a big deal with.</p>
                     </FeaturedNeighborhoodsViewContainer>
                 </FeaturedNeighborhoodsView>
 
-                {/* <GettingStartedView> */}
-                    {/* <GettingStartedViewContainer> */}
-                        {/* <SectionHeader blueWord="Getting" greyWord="started" /> */}
+                {/* <GettingStartedView>
+                    <GettingStartedViewContainer>
+                        <SectionHeader blueWord="Getting" greyWord="started" />
+                        <h3 style={{ marginTop: "60px" }}>
+                            Having to exist in this world can be hard Jacob.
+                        </h3>
+                        </GettingStartedViewContainer>
+                </GettingStartedView> */}
 
-                        {/* <h3 style={ {'marginTop': '60px'} }>Having to exist in this world can be hard Jacob.</h3> */}
-                    {/* </GettingStartedViewContainer> */}
-                {/* </GettingStartedView> */}
-                
                 {/* <HomeContactView> */}
-                
+
                 {/* </HomeContactView> */}
             </HomeView>
         )
@@ -166,7 +178,7 @@ const HeroView = styled.div`
 `
 
 const HeroViewContainer = styled.div`
-    width: ${ WIDTH_OF_ALL_CONTAINERS };
+    width: ${WIDTH_OF_ALL_CONTAINERS};
     position: relative;
     bottom: 20px;
 `
@@ -195,7 +207,7 @@ const AboutView = styled.div`
 `
 
 const AboutViewContainer = styled.div`    width: 100%;
-    width: ${ WIDTH_OF_ALL_CONTAINERS };
+    width: ${WIDTH_OF_ALL_CONTAINERS};
     margin-top: 130px;
     display: flex;
     flex-direction: column;    
@@ -245,7 +257,7 @@ const TestimonialsView = styled.div`
 `
 
 const TestimonialsViewContainer = styled.div`
-    width: ${ WIDTH_OF_ALL_CONTAINERS };
+    width: ${WIDTH_OF_ALL_CONTAINERS};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,20 +266,20 @@ const TestimonialsViewContainer = styled.div`
         color: #2b2b2b;
     }
 `
-    
+
 const TestimonialsAccentHome = styled.div`
     width: 30px;
     height: 3px;
     background: #1e1e1e;
 `
-    
+
 const TestimonialsContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
 `
-    
+
 const FeaturedNeighborhoodsView = styled.div`
     width: 100%;
     display: flex;
@@ -276,12 +288,12 @@ const FeaturedNeighborhoodsView = styled.div`
 `
 
 const FeaturedNeighborhoodsViewContainer = styled.div`
-    width: ${ WIDTH_OF_ALL_CONTAINERS };
+    width: ${WIDTH_OF_ALL_CONTAINERS};
     display: flex;
     flex-direction: column;
     align-items: center;
 `
-    
+
 const HoodsContainer = styled.div`
     width: 100%;
     margin-top: 98px;
