@@ -16,3 +16,7 @@ p {
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
 }
+
+input, textarea, button {
+  font-family: 'Raleway', sans-serif;
+}
