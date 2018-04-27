@@ -7,6 +7,7 @@ module.exports = {
         "linebreak-style": ["off"],
         "indent": ["error", 4],
         "react/jsx-indent": ["error", 4],
-        "react/prefer-stateless-function": ["off"]
+        "react/prefer-stateless-function": ["off"],
+        "react/jsx-indent-props": ["error", 4]
     }
 };
