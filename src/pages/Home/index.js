@@ -13,6 +13,7 @@ import HomeTestimonial from "../../components/HomeTestimonial";
 class Home extends React.Component {
     render() {
         let dick = 'dick'
+        let dick2 = 'dick2'
         return (
             <HomeView {...this.props}>
                 <HeroView>
