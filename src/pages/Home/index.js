@@ -5,16 +5,17 @@ import SectionHeader from "../../components/SectionHeader"
 import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 import HomeTestimonial from "../../components/HomeTestimonial";
 //fsftetetetget
+//balls
 class Home extends React.Component {
     render() {
         return (
-            // <HomeView {...this.props}>
-            //     <HeroView>
-            //         <HeroViewContainer>
-            //             <HeroHeader>The search for your new <BoldenWord>home </BoldenWord>starts here.</HeroHeader>
-            //             <Mls />
-            //         </ HeroViewContainer>
-            //     </HeroView>
+            <HomeView {...this.props}>
+                <HeroView>
+                    <HeroViewContainer>
+                        <HeroHeader>The search for your new <BoldenWord>home </BoldenWord>starts here.</HeroHeader>
+                        <Mls />
+                    </ HeroViewContainer>
+                </HeroView>
 
                 <AboutView>
                     <AboutViewContainer>
