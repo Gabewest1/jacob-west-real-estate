@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import PageLinks from "../../components/PageLinks"
 import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 
-
 const Navbar = props => (
     <NavbarView {...props}>
         <NavbarContainer>
@@ -21,8 +20,8 @@ const Navbar = props => (
 
 const NavbarView = styled.div`
     position: fixed;
+    top: 0;
     z-index: 10000;
-    height: 73px;
     width: 100%;
     background-color: rgb(34, 38, 43);
     display: flex;
