@@ -9,7 +9,7 @@ const Navbar = props => (
     <NavbarView {...props}>
         <NavbarContainer>
             <LogoLinkToHome to="/">
-                <Logo src="/assets/logo.svg"></Logo>
+                <Logo src="/assets/logo.svg" />
             </LogoLinkToHome>
 
             <PageLinks />
@@ -33,7 +33,7 @@ const NavbarView = styled.div`
 `
 
 const NavbarContainer = styled.div`
-    width: ${ WIDTH_OF_ALL_CONTAINERS };
+    width: ${WIDTH_OF_ALL_CONTAINERS};
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,6 +55,5 @@ const PhoneNumberLinkToContact = styled(Link)`
     letter-spacing: -0.08rem;
     color: rgba(235, 235, 235, 0.96);
 `
-
 
 export default Navbar
