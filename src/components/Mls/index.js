@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 
 class Mls extends React.Component {
     render() {
@@ -17,8 +16,6 @@ class Mls extends React.Component {
         )
     }
 }
-
-
 
 const MlsContainer = styled.div`
     width: 100%;

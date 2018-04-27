@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import PageLinks from "../../components/PageLinks"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 
 const Footer = props => (
     <FooterView {...props}>
@@ -9,18 +8,17 @@ const Footer = props => (
             <FooterPageLinks />
 
             <Copyright>
-                Each Office Independently Owned and Operated. © 2018 RE/MAX, LLC. All Rights Reserved.
+                Each Office Independently Owned and Operated.
+                © 2018 RE/MAX, LLC. All Rights Reserved.
             </Copyright>
 
             <FooterLogosContainer>
                 <RemaxFooterLogoContainer>
-                    <RemaxFooterLogo src="/assets/remax-logo-footer.svg">
-                    </RemaxFooterLogo>
+                    <RemaxFooterLogo src="/assets/remax-logo-footer.svg" />
                 </RemaxFooterLogoContainer>
 
                 <MottoMortgageFooterLogoContainer>
-                    <MottoMortgageFooterLogo src="/assets/motto-mortgage.png">
-                    </MottoMortgageFooterLogo>
+                    <MottoMortgageFooterLogo src="/assets/motto-mortgage.png" />
                 </MottoMortgageFooterLogoContainer>
             </FooterLogosContainer>
         </FooterContainer>
@@ -45,8 +43,8 @@ const FooterContainer = styled.div`
 `
 
 const FooterPageLinks = styled(PageLinks)`
-    font-size: 11px;
-    color: #ccc;
+    letter-spacing: 0.01rem;
+    color: #b1b1b1;
     text-transform: uppercase;
 `
 
@@ -63,7 +61,7 @@ const FooterLogosContainer = styled.div`
     justify-content: space-between;
     margin-top: 20px;
 `
-    
+
 const RemaxFooterLogoContainer = styled.div`
     width: 110px;
 `

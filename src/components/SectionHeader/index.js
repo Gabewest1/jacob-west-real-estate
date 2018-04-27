@@ -1,18 +1,17 @@
 import React from "react"
 import styled from "styled-components"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
-
 
 class SectionHeader extends React.Component {
     render() {
-        
         return (
-            <SectionHeaderContainer >
-               <BlueLine {...this.props}></BlueLine>
+            <SectionHeaderContainer>
+                <BlueLine {...this.props} />
 
-               <BlueText {...this.props}>{ this.props.blueWord } <GreyText>{ this.props.greyWord }</GreyText></BlueText>
+                <BlueText {...this.props}>
+                    { this.props.blueWord } <GreyText>{ this.props.greyWord }</GreyText>
+                </BlueText>
 
-               <GreyLine {...this.props}></GreyLine>
+                <GreyLine {...this.props} />
             </SectionHeaderContainer>
         )
     }
