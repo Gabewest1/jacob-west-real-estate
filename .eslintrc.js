@@ -8,6 +8,7 @@ module.exports = {
         "indent": ["error", 4],
         "react/jsx-indent": ["error", 4],
         "react/prefer-stateless-function": ["off"],
-        "react/jsx-indent-props": ["error", 4]
+        "react/jsx-indent-props": ["error", 4],
+        "react/require-default-props": ["off"]
     }
-};
+}
