@@ -6,8 +6,13 @@ import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 import HomeTestimonial from "../../components/HomeTestimonial";
 //fsftetetetget
 //feature merge test
+//feature merge test
+//feature merge test
+//feature merge test
+//feature merge test
 class Home extends React.Component {
     render() {
+        let dick = 'dick'
         return (
             <HomeView {...this.props}>
                 <HeroView>
