@@ -5,7 +5,7 @@ import SectionHeader from "../../components/SectionHeader"
 import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 import HomeTestimonial from "../../components/HomeTestimonial";
 //fsftetetetget
-//balls
+//feature merge test
 class Home extends React.Component {
     render() {
         return (
