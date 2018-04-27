@@ -4,7 +4,8 @@ import Mls from "../../components/Mls"
 import SectionHeader from "../../components/SectionHeader"
 import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 import HomeTestimonial from "../../components/HomeTestimonial";
-
+//fsftetetetget
+//balls
 class Home extends React.Component {
     render() {
         return (
@@ -21,8 +22,7 @@ class Home extends React.Component {
                         <SectionHeader blueWord="About" greyWord="Us"/>
 
                         <AboutImgAndTextContainer>
-
-                            <AboutTextContainer>
+                             <AboutTextContainer>
                                 <h3>Jacob West</h3>
 
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
