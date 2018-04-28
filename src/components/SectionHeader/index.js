@@ -24,10 +24,10 @@ SectionHeader.propTypes = {
 }
 
 const SectionHeaderContainer = styled.div`
+    width: 100%;    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 180px;
 `
 
 const BlueText = styled.h1`
@@ -37,7 +37,6 @@ const BlueText = styled.h1`
     letter-spacing: 0.3rem;
     text-transform: uppercase;  
     color: #003e75;
-    background: white;
     box-sizing: border-box;
     padding: 0 1em;
     white-space: nowrap;
@@ -48,13 +47,13 @@ const GreyText = styled.span`
 `
 
 const BlueLine = styled.div`
-    width: 100%;
+    width: 50%;
     height: 1px;
     background: rgba(7, 85, 150, 0.4);
 `
 
 const GreyLine = styled.div`
-    width: 100%;
+    width: 50%;
     height: 1px;
     background: rgba(140, 140, 140, 0.55);
 `
