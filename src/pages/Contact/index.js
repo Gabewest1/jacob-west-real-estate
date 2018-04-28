@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+
+import SectionHeader from "../../components/SectionHeader"
 import ContactForm from "../../components/ContactForm"
 import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 
@@ -9,7 +11,7 @@ class Contact extends React.Component {
             <ContactView {...this.props}>
                 <SiteWrapper>
 
-                    <Header>Get In Touch</Header>
+                    <SectionHeaderPadded blueWord="Contact" greyWord="Jacob" />
 
                     <Body>
                         <LeaveMessageWrapper>
@@ -53,8 +55,7 @@ class Contact extends React.Component {
     }
 }
 
-const Header = styled.h1`
-    text-align: center;
+const SectionHeaderPadded = styled(SectionHeader)`
     padding: 40px 0 20px 0;
     margin: 0;
 `
