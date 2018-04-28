@@ -4,14 +4,14 @@ import styled from "styled-components"
 class SectionHeader extends React.Component {
     render() {
         return (
-            <SectionHeaderContainer>
-                <BlueLine {...this.props} />
+            <SectionHeaderContainer {...this.props}>
+                <BlueLine />
 
-                <BlueText {...this.props}>
+                <BlueText>
                     { this.props.blueWord } <GreyText>{ this.props.greyWord }</GreyText>
                 </BlueText>
 
-                <GreyLine {...this.props} />
+                <GreyLine />
             </SectionHeaderContainer>
         )
     }
