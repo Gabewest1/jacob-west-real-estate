@@ -63,6 +63,7 @@ const GreyLine = styled.div`
     test4: test4;
     test5: test5;
     test6: test6;
+    test7: test7;
 `
 
 export default SectionHeader
