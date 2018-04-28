@@ -25,6 +25,7 @@ SectionHeader.propTypes = {
 
 const SectionHeaderContainer = styled.div`
     width: 100%;    
+    height: 'delete this property, just testing rebase';
     display: flex;
     justify-content: space-between;
     align-items: center;
