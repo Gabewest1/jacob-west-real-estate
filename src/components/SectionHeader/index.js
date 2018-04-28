@@ -59,6 +59,7 @@ const GreyLine = styled.div`
     background: rgba(140, 140, 140, 0.55);
     test: test;
     test2: test2;
+    test3: test3;
 `
 
 export default SectionHeader
