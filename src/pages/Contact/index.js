@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import SectionHeader from "../../components/SectionHeader"
 import ContactForm from "../../components/ContactForm"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
+import SiteWrapper from "../../components/SiteWrapper"
 
 class Contact extends React.Component {
     render() {
@@ -39,7 +39,9 @@ class Contact extends React.Component {
 
                                 <ContactWrapper>
                                     <ContactTitle>Office Address</ContactTitle>
-                                    <ContactInfo>2321 Loquat Ln Round Rock, Texas 78664</ContactInfo>
+                                    <ContactInfo>
+                                        2321 Loquat Ln Round Rock, Texas 78664
+                                    </ContactInfo>
                                 </ContactWrapper>
 
                                 <ContactWrapper>
@@ -115,10 +117,7 @@ const Body = styled.div`
     }
 
 `
-const SiteWrapper = styled.div`
-    width: ${WIDTH_OF_ALL_CONTAINERS};
-    margin: 0 auto;
-`
+
 const ContactView = styled.div``
 
 export default Contact
