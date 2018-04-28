@@ -1,20 +1,26 @@
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types"
 
 class SectionHeader extends React.Component {
     render() {
         return (
-            <SectionHeaderContainer>
-                <BlueLine {...this.props} />
+            <SectionHeaderContainer {...this.props}>
+                <BlueLine />
 
-                <BlueText {...this.props}>
+                <BlueText>
                     { this.props.blueWord } <GreyText>{ this.props.greyWord }</GreyText>
                 </BlueText>
 
-                <GreyLine {...this.props} />
+                <GreyLine />
             </SectionHeaderContainer>
         )
     }
+}
+
+SectionHeader.propTypes = {
+    blueWord: PropTypes.string,
+    greyWord: PropTypes.string,
 }
 
 const SectionHeaderContainer = styled.div`

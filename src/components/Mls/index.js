@@ -6,7 +6,7 @@ class Mls extends React.Component {
         return (
             <MlsContainer {...this.props}>
                 <MlsForm>
-                    <MlsNumberInput placeholder="Enter City, Neighborhood, Address, Zip or MLS#"/>
+                    <MlsNumberInput placeholder="Enter City, Neighborhood, Address, Zip or MLS#" />
                     <MlsFilterOptions>Beds</MlsFilterOptions>
                     <MlsFilterOptions>Baths</MlsFilterOptions>
                     <MlsFilterOptions>Sq ft</MlsFilterOptions>
@@ -75,7 +75,7 @@ const MlsSubmitButton = styled.button`
     align-items: center;
     width: 60%;
     height: 47px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255);
     background-color:   #ea343e; 
     border: #d44552 1px solid;
     letter-spacing: 0.045rem;
