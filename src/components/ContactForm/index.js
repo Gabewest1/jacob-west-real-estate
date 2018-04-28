@@ -20,14 +20,14 @@ class ContactForm extends React.Component {
 const Input = styled.input`
     height: 34px;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     box-sizing: border-box;
     background: #c3c3c3;
 `
 const TextArea = styled.textarea`
     width: 100%;
-    padding: 5px;
-    height: 105px;
+    padding: 10px;
+    height: 130px;
     margin: 0;
     box-sizing: border-box;
     background: #c3c3c3;
