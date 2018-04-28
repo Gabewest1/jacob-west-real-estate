@@ -10,3 +10,4 @@ const SiteWrapper = styled.div`
 export default props => (
     <SiteWrapper {...props}>{props.children}</SiteWrapper>
 )
+

@@ -54,7 +54,8 @@ const TestimonialsViewContainer = styled.div`
 const TestimonialsAccentHome = styled.div`
     width: 30px;
     height: 3px;
-    background: #1e1e1e;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
 `
 
 const TestimonialsContainer = styled.div`

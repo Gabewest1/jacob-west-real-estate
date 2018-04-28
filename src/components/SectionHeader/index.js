@@ -27,7 +27,7 @@ const SectionHeaderContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 180px;
 `
 
 const BlueText = styled.h1`
@@ -50,13 +50,13 @@ const GreyText = styled.span`
 const BlueLine = styled.div`
     width: 100%;
     height: 1px;
-    background: rgba(113, 147, 176, 0.95);
+    background: rgba(7, 85, 150, 0.4);
 `
 
 const GreyLine = styled.div`
     width: 100%;
     height: 1px;
-    background: rgb(140, 140, 140);
+    background: rgba(140, 140, 140, 0.55);
 `
 
 export default SectionHeader

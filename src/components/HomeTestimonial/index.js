@@ -1,24 +1,23 @@
 import React from "react"
 import styled from "styled-components"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
+import PropTypes from "prop-types"
 
 class HomeTestimonial extends React.Component {
     render() {
         return (
             <TestimonialContainer {...this.props}>
                 <QuotesWrapper>
-                    <QuotesImg src="/assets/quotes.svg"/>
+                    <QuotesImg src="/assets/quotes.svg" />
                 </QuotesWrapper>
 
                 <TestimonialTextAccentNameContainer>
-                    <TestimonialText {...this.props}>
+                    <TestimonialText>
                         {this.props.clientWords}
                     </TestimonialText>
 
-                    <TestimonialAccent>
-                    </TestimonialAccent>
+                    <TestimonialAccent />
 
-                    <TestimonialName {...this.props}>
+                    <TestimonialName>
                         {this.props.clientName}
                     </TestimonialName>
                 </TestimonialTextAccentNameContainer>
@@ -27,11 +26,12 @@ class HomeTestimonial extends React.Component {
     }
 }
 
-
-
-
 export default HomeTestimonial
 
+HomeTestimonial.propTypes = {
+    clientWords: PropTypes.string,
+    clientName: PropTypes.string,
+}
 
 const TestimonialContainer = styled.div`
     width: 30%;
@@ -63,8 +63,9 @@ const TestimonialText = styled.div`
 const TestimonialAccent = styled.div`
     width: 20px;
     height: 2px;
-    background: rgba(0, 0, 0, 0.8);
-    margin-top: 14px;
+    background: rgba(0, 0, 0, 0.83);
+    margin-top: 14px;s
+    border-raidus: 50px;
 `
 
 const TestimonialName = styled.div`
