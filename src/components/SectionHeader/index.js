@@ -50,7 +50,7 @@ const GreyText = styled.span`
 const BlueLine = styled.div`
     width: 50%;
     height: 1px;
-    background: rgba(7, 85, 150, 0.4);
+    background: rgba(7, 85, 150, 0.5);
 `
 
 const GreyLine = styled.div`
@@ -61,6 +61,7 @@ const GreyLine = styled.div`
     test2: test2;
     test3: test3;
     test4: test4;
+    test5: test5;
 `
 
 export default SectionHeader
