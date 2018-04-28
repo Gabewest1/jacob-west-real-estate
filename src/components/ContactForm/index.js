@@ -68,7 +68,6 @@ const Wrapper = styled.div`
 const ContactFormView = styled.form`
     display: flex;
     flex-direction: column;
-    max-width: 500px;
 
     * {
         border: none;    
