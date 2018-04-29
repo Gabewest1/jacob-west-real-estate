@@ -11,6 +11,8 @@ class PropertySearch extends React.Component {
     }
 }
 
-const PropertySearchView = styled.div``
+const PropertySearchView = styled.div`
+    background: white;
+`
 
 export default PropertySearch

@@ -11,6 +11,8 @@ class About extends React.Component {
     }
 }
 
-const AboutView = styled.div``
+const AboutView = styled.div`
+    background: white;
+`
 
 export default About

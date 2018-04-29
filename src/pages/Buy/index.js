@@ -79,6 +79,7 @@ const Wrapper = styled.div`
 const Body = styled.div``
 const BuyView = styled.div`
     padding: 60px 0;
+    background: white;
 `
 
 export default Buy

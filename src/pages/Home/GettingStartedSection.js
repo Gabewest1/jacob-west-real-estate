@@ -23,7 +23,7 @@ class GettingStartedSection extends React.Component {
                             <StepImageWrapper>
                                 <StepImage src="/assets/why-us.png" />
                             </StepImageWrapper>
-                            
+
                             <h3>Why Us</h3>
 
                             <p>
@@ -41,7 +41,7 @@ class GettingStartedSection extends React.Component {
                             <StepImageWrapper>
                                 <StepImage src="/assets/buy.png" />
                             </StepImageWrapper>
-                            
+
                             <h3>Buying</h3>
 
                             <p>
@@ -59,7 +59,7 @@ class GettingStartedSection extends React.Component {
                             <StepImageWrapper>
                                 <StepImage src="/assets/sell.png" />
                             </StepImageWrapper>
-                            
+
                             <h3>Selling</h3>
 
                             <p>

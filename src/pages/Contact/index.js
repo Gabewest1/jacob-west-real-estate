@@ -118,6 +118,8 @@ const Body = styled.div`
 
 `
 
-const ContactView = styled.div``
+const ContactView = styled.div`
+    background: white;
+`
 
 export default Contact
