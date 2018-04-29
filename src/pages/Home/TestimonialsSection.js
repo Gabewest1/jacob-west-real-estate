@@ -38,6 +38,8 @@ const TestimonialsView = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    background: white;
+    
 `
 
 const TestimonialsViewContainer = styled.div`
@@ -50,7 +52,7 @@ const TestimonialsViewContainer = styled.div`
         color: #2b2b2b;
     }
     @media (max-width: 1000px) {
-        margin-top: 82px;
+        margin-top: 140px;
     }
 `
 

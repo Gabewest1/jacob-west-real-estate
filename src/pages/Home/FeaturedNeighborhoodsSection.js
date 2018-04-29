@@ -63,10 +63,7 @@ const FeaturedNeighborhoodsView = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 180px;
-    @media (max-width: 1000px) {
-        margin-top 110px;
-    }
+    background: white;
 `
 
 const FeaturedNeighborhoodsViewContainer = styled.div`
@@ -74,8 +71,12 @@ const FeaturedNeighborhoodsViewContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 180px;
     p{
         text-align: center;
+    }
+    @media (max-width: 1000px) {
+        margin-top 130px;
     }
 `
 

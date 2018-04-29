@@ -11,11 +11,11 @@ class GettingStartedSection extends React.Component {
                 <GettingStartedViewContainer>
                     <SectionHeader blueWord="Getting" greyWord="started" />
 
-                    <h3 style={{ marginTop: "46px" }}>Having to exist in this world can be hard Jacob.</h3>
+                    <h3>Having to exist in this world can be hard Jacob.</h3>
 
                     <p>
                         Property values are always going to be around, never
-                        get to<br /> know what you can or can&#39;t just by asking.
+                        get to know what you can or can&#39;t just by asking.
                     </p>
 
                     <ThreeStepProcess>
@@ -77,7 +77,7 @@ class GettingStartedSection extends React.Component {
                     <GettingStartedAccent />
 
                     <p style={{ marginTop: "17px", color: "#464646" }}>
-                        Property values are always going to be around, never get to<br /> know
+                        Property values are always going to be around, never get to know
                         what you can or can&#39;t just by asking.
                     </p>
                 </GettingStartedViewContainer>
@@ -93,6 +93,8 @@ const GettingStartedView = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
+    background: white;
 `
 
 const GettingStartedViewContainer = styled.div`
@@ -106,6 +108,16 @@ const GettingStartedViewContainer = styled.div`
     }
     p{
         text-align: center;
+    }
+    @media (max-width: 1000px) {
+        margin-top: 138px;
+        h3{
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        p{
+            font-size: 14px;
+        }
     }
 `
 
@@ -130,10 +142,27 @@ const ThreeStepProcess = styled.div`
             margin-top: -8px;
         }
     }
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        margin-top: -10px;
+        div{
+            margin-top: 104px;
+            h3{
+                margin-top: 20px;
+            }
+            p{
+                margin-top: 5px;
+                width: 100%;
+            }
+        }
+    }
 `
 
 const StepImageWrapper = styled.div`
     width: 110px;
+    @media (max-width: 1000px) {
+        width: 130px;
+    }
 `
 
 const StepImage = styled.img`
@@ -154,6 +183,9 @@ const LearnMoreButton = styled(Link)`
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    @media (max-width: 1000px) {
+        margin-top: -3px;
+    }
 `
 
 const GettingStartedAccent = styled.div`
