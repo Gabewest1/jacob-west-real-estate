@@ -31,6 +31,9 @@ const FooterView = styled.div`
     background: #1e2021;
     display: flex;
     justify-content: center;
+    @media (max-width: 1000px) {
+        height: 170px;
+    }
 `
 
 const FooterContainer = styled.div`
@@ -40,12 +43,18 @@ const FooterContainer = styled.div`
     position: relative;
     margin-top: 52px;
     width: 80%;
+    @media (max-width: 1000px) {
+        margin-top: 27px;
+    }
 `
 
 const FooterPageLinks = styled(PageLinks)`
     letter-spacing: 0.01rem;
     color: #b1b1b1;
     text-transform: uppercase;
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `
 
 const Copyright = styled.div`
@@ -60,6 +69,9 @@ const FooterLogosContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    @media (max-width: 1000px) {
+        padding-top: 14px;
+    }
 `
 
 const RemaxFooterLogoContainer = styled.div`
