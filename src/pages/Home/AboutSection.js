@@ -86,6 +86,7 @@ const ClientImgWrapper = styled.div`
 
 const ClientImg = styled.img`
     width: 100%;
+    width: 20px;
 `
 
 const AboutTextContainer = styled.div`

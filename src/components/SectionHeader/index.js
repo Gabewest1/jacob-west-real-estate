@@ -34,13 +34,16 @@ const SectionHeaderContainer = styled.div`
 const BlueText = styled.h1`
     font-family: raleway;
     font-weight: 300;
-    font-size: 2.3em;
+    font-size: 2px;
     letter-spacing: 0.3rem;
     text-transform: uppercase;  
     color: #003e75;
     box-sizing: border-box;
     padding: 0 1em;
-    white-space: nowrap;
+    // white-space: nowrap;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
 `
 
 const GreyText = styled.span`

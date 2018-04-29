@@ -28,7 +28,7 @@ const Links = styled.ul`
     margin: 0;
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    // width: 50%;
 `
 
 export default PageLinks

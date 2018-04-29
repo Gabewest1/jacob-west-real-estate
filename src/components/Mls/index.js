@@ -29,25 +29,39 @@ const MlsForm = styled.form`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
 `
 
 const MlsNumberInput = styled.input`
     width: 100%;
-    height: 45px;
+    height: 47px;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    padding-left: 15px;
     background-color: rgb(250, 250, 250);
     border: #c4c4c4 1px solid;
     color: rgb(67, 67, 67);
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    border-radius: 0px;
     
     &::-webkit-input-placeholder { 
         color: rgb(150, 150, 150);
         font-size: 15px;
         font-weight: 300;   
         font-family: 'Roboto', sans-serif;
+        padding-left: 10px;
+        @media (max-width: 1000px) {
+            font-size: 13px;
+        }
+        @media (max-width: 350px) {
+            font-size: 11px;
+        }
+    }
+    @media (max-width: 1000px) {
+        font-size: 13px;
     }
 `
 
@@ -67,6 +81,12 @@ const MlsFilterOptions = styled.button`
     letter-spacing: 0.035rem;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+    @media (max-width: 1000px) {
+        border-left: rgba(170, 170, 170, 0.6) 1px solid;
+        border-top: none;
+        width: 100%;
+        font-size: 12px;
+    }
 `
 
 const MlsSubmitButton = styled.button`
@@ -82,6 +102,11 @@ const MlsSubmitButton = styled.button`
     font-weight: 400;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 44px;
+        font-size: 14px;
+    }
 `
 
 export default Mls
