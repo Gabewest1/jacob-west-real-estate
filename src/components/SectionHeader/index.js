@@ -44,7 +44,6 @@ const BlueText = styled.h1`
     @media (max-width: 1000px) {
         flex-direction: column;
         font-size: 32px;
-        white-space: normal;
     }
 `
 

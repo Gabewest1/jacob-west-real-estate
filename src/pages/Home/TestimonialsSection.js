@@ -49,6 +49,9 @@ const TestimonialsViewContainer = styled.div`
     h3{
         color: #2b2b2b;
     }
+    @media (max-width: 1000px) {
+        margin-top: 82px;
+    }
 `
 
 const TestimonialsAccentHome = styled.div`
@@ -63,6 +66,10 @@ const TestimonialsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        margin-top: 30px;
+    }
 `
 
 export default TestimonialsSection

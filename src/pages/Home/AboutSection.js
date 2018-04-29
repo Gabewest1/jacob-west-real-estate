@@ -8,7 +8,7 @@ class AboutSection extends React.Component {
         return (
             <AboutView>
                 <AboutViewContainer>
-                    <SectionHeader blueWord="About" greyWord="Us" />
+                    <SectionHeader blueWord="About" greyWord="Us" noWrap={false} />
 
                     <AboutImgAndTextContainer>
                         <AboutTextContainer>
@@ -90,7 +90,7 @@ const AboutImgAndTextContainer = styled.div`
 const ClientImgWrapper = styled.div`
     width: 284px;
     @media (max-width: 1000px) {
-        width: 80%;
+        width: 70%;
         margin-top: -32px;
         border-radius: 50%;
     }
@@ -108,7 +108,7 @@ const AboutTextContainer = styled.div`
     @media (max-width: 1000px) {
         border-radius: 50%;
         width: 100%;
-        text-align: justify;
+        // text-align: justify;
         margin-top: 10px;
     }
 `

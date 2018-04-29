@@ -38,6 +38,10 @@ const TestimonialContainer = styled.div`
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto', sans-serif;
+    @media (max-width: 1000px) {
+        width: 100%;
+        margin-top: 40px;
+    }
 `
 
 const QuotesWrapper = styled.div`
@@ -58,6 +62,9 @@ const TestimonialText = styled.div`
     font-style: italic;
     line-height: 1.7em;
     color: #484848;
+    @media (max-width: 1000px) {
+        // text-align: justify;
+    }
 `
 
 const TestimonialAccent = styled.div`
