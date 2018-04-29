@@ -20,8 +20,15 @@ const PageLink = styled(Link)`
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: inherit;
+    @media (max-width: 1000px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 0.1rem;
 `
-
 const Links = styled.ul`
     color: rgba(235, 235, 235, 0.87);
     padding: 0;
@@ -29,6 +36,19 @@ const Links = styled.ul`
     display: flex;
     justify-content: space-between;
     width: 50%;
+    text-align: center;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        position: absolute;
+        top: 54px;
+        overflow: hidden;
+        height: ${({ isExpanded }) => isExpanded ? "200px" : "0px"};
+        padding: ${({ isExpanded }) => isExpanded ? "14px 0" : "0"};
+        background: rgb(34,38,43); 
+        width: 100%;
+        box-sizing: border-box;
+        border-top: rgba(255, 255, 255, 0.07) 1px solid;
+    }
 `
 
 export default PageLinks
