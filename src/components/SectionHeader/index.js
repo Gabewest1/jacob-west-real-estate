@@ -43,7 +43,7 @@ const BlueText = styled.h1`
     white-space: nowrap;
     @media (max-width: 1000px) {
         flex-direction: column;
-        font-size: 26px;
+        font-size: 32px;
         white-space: normal;
     }
 `
