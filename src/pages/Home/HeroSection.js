@@ -19,21 +19,29 @@ class HeroSection extends React.Component {
 }
 
 const HeroView = styled.div`
+    width: 1200px;
     width: 100%;
     height: 100vh;
     background: url('/assets/hero1.png') no-repeat;
     background-size: 120%;
     background-position: 30% 68%;
-    top: 0;
-    left: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1000px) {
+        background-size: 322%;
+        background-position: 34% 78%;
+    }
 `
 
 const HeroViewContainer = styled.div`
     width: ${WIDTH_OF_ALL_CONTAINERS};
+    position: absolute;
+    @media (max-width: 1000px) {
+        bottom: 170px;
+    }
 `
 
 const HeroHeader = styled.div`
@@ -45,6 +53,11 @@ const HeroHeader = styled.div`
     letter-spacing: -0.1rem;
     position: relative;
     top: 6px;
+    @media (max-width: 1000px) {
+        line-height: 1em;
+        font-size: 40px;
+        top: -4px;
+    }
 `
 
 const BoldenWord = styled.span`

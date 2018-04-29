@@ -28,22 +28,24 @@ const PageLink = styled(Link)`
         text-transform: uppercase;
         font-size: 10px;
         letter-spacing: 0.1rem;
+        height: 60px;
 `
 const Links = styled.ul`
     color: rgba(235, 235, 235, 0.87);
     padding: 0;
     margin: 0;
     display: flex;
+    flex-grow: .4;
     justify-content: space-between;
-    width: 50%;
     text-align: center;
     transition: all .12s ease-in;
+
     @media (max-width: 1000px) {
         flex-direction: column;
         position: absolute;
         top: 54px;
         overflow: hidden;
-        height: ${({ isExpanded }) => isExpanded ? "200px" : "0px"};
+        height: ${({ isExpanded }) => isExpanded ? "400px" : "0px"};
         padding: ${({ isExpanded }) => isExpanded ? "14px 0" : "0"};
         background: rgb(34,38,43); 
         width: 100%;

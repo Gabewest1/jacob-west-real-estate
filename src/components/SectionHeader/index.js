@@ -25,7 +25,6 @@ SectionHeader.propTypes = {
 
 const SectionHeaderContainer = styled.div`
     width: 100%;    
-    height: 'delete this property, just testing rebase';
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,14 +32,20 @@ const SectionHeaderContainer = styled.div`
 
 const BlueText = styled.h1`
     font-family: raleway;
-    font-weight: 300;
-    font-size: 2.3em;
+    font-weight: 200;
+    font-size: 40px;
     letter-spacing: 0.3rem;
     text-transform: uppercase;  
+    text-align: center;
     color: #003e75;
     box-sizing: border-box;
     padding: 0 1em;
     white-space: nowrap;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        font-size: 26px;
+        white-space: normal;
+    }
 `
 
 const GreyText = styled.span`
