@@ -64,6 +64,9 @@ const FeaturedNeighborhoodsView = styled.div`
     display: flex;
     justify-content: center;
     margin-top: 180px;
+    @media (max-width: 1000px) {
+        margin-top 110px;
+    }
 `
 
 const FeaturedNeighborhoodsViewContainer = styled.div`
@@ -71,32 +74,52 @@ const FeaturedNeighborhoodsViewContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    p{
+        text-align: center;
+    }
 `
 
 const HoodsContainer = styled.div`
     width: 100%;
     margin-top: 98px;
+    @media (max-width: 1000px) {
+        margin-top: 20px;
+    }
 `
 
 const TopRowContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
 `
 
 const BottomRowContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        margin-top: 0px;
+    }
 `
 
 const HoodWrapper = styled.div`
     width: 210px;
     height: 138px;
     box-shadow: 3px 4px 17px 0 rgba(0, 0, 0, 0.35);
+    @media (max-width: 1000px) {
+        width: 90%;
+        height: 40vw;
+        margin: 0 auto;
+        margin-top: 70px;
+    }
 `
 
 const Hood = styled.img`
     width: 100%;
+    height: auto;
 `
 
 export default FeaturedNeighborhoodsSection

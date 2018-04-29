@@ -23,7 +23,7 @@ class Navbar extends React.Component {
 
                     <PhoneNumberLinkToContact to="contact">512 669 9649</PhoneNumberLinkToContact>
                 </NavbarContainer>
-                <NavMenuExpander onClick={() => {this.setState({ isExpanded: !isExpanded }); console.log('gegteg')}}>
+                <NavMenuExpander onClick={() => this.setState({ isExpanded: !isExpanded })}>
                     <Hamburger src="/assets/hamburger.svg" />
                 </NavMenuExpander>
             </NavbarView>
@@ -79,8 +79,8 @@ const PhoneNumberLinkToContact = styled(Link)`
 const NavMenuExpander = styled.button`
     align-self: flex-end;
     margin-right: 2px;
-    width: 40px;
-    height: 40px;
+    width: 57px;
+    height: 57px;
     display: flex;
     justify-content: center;
     align-items: center;
