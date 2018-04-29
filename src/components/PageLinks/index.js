@@ -37,6 +37,7 @@ const Links = styled.ul`
     justify-content: space-between;
     width: 50%;
     text-align: center;
+    transition: all .12s ease-in;
     @media (max-width: 1000px) {
         flex-direction: column;
         position: absolute;

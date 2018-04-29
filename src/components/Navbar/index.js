@@ -11,7 +11,7 @@ class Navbar extends React.Component {
 
     render() {
         let { isExpanded } = this.state
-
+        console.log(isExpanded)
         return (
             <NavbarView {...this.props}>
                 <NavbarContainer>
@@ -23,7 +23,7 @@ class Navbar extends React.Component {
 
                     <PhoneNumberLinkToContact to="contact">512 669 9649</PhoneNumberLinkToContact>
                 </NavbarContainer>
-                <NavMenuExpander onClick={() => this.setState({ isExpanded: !isExpanded })}>
+                <NavMenuExpander onClick={() => {this.setState({ isExpanded: !isExpanded }); console.log('gegteg')}}>
                     <Hamburger src="/assets/hamburger.svg" />
                 </NavMenuExpander>
             </NavbarView>
@@ -86,6 +86,7 @@ const NavMenuExpander = styled.button`
     align-items: center;
     background: none;
     border: none;
+    z-index: 220000000;
     @media (max-width: 1000px) {
         margin-right: 10px;
     }
