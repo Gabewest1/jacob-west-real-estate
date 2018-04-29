@@ -19,11 +19,11 @@ class GettingStartedSection extends React.Component {
                     </p>
 
                     <ThreeStepProcess>
-                        <div>
+                        <StepContainer>
                             <StepImageWrapper>
                                 <StepImage src="/assets/why-us.png" />
                             </StepImageWrapper>
-
+                            
                             <h3>Why Us</h3>
 
                             <p>
@@ -35,9 +35,9 @@ class GettingStartedSection extends React.Component {
                             <LearnMoreButton to="/about">
                                 Learn More
                             </LearnMoreButton>
-                        </div>
+                        </StepContainer>
 
-                        <div>
+                        <StepContainer>
                             <StepImageWrapper>
                                 <StepImage src="/assets/buy.png" />
                             </StepImageWrapper>
@@ -53,9 +53,9 @@ class GettingStartedSection extends React.Component {
                             <LearnMoreButton to="/buy">
                                 Learn More
                             </LearnMoreButton>
-                        </div>
+                        </StepContainer>
 
-                        <div>
+                        <StepContainer>
                             <StepImageWrapper>
                                 <StepImage src="/assets/sell.png" />
                             </StepImageWrapper>
@@ -71,7 +71,7 @@ class GettingStartedSection extends React.Component {
                             <LearnMoreButton to="/sell">
                                 Learn More
                             </LearnMoreButton>
-                        </div>
+                        </StepContainer>
                     </ThreeStepProcess>
 
                     <GettingStartedAccent />
@@ -116,44 +116,43 @@ const GettingStartedViewContainer = styled.div`
             font-size: 16px;
         }
         p{
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 `
-
 const ThreeStepProcess = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
-    
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h3{
-            margin-top: 40px;
-        }
-        p{
-            width: 74%;
-            text-align: center;
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 1.75em;
-            margin-top: -8px;
-        }
-    }
     @media (max-width: 1000px) {
         flex-direction: column;
-        margin-top: -10px;
-        div{
-            margin-top: 104px;
-            h3{
-                margin-top: 20px;
-            }
-            p{
-                margin-top: 5px;
-                width: 100%;
-            }
+        margin-top: 0px;
+    }
+`
+const StepContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        margin-top: 40px;
+    }
+    p{
+        width: 74%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.75em;
+        margin-top: -8px;
+    }
+    @media (max-width: 1000px) {
+        margin-top: 88px;
+        h3{
+            margin-top: 20px;
+        }
+        p{
+            text-align: start;
+            margin-top: 5px;
+            width: 100%;
         }
     }
 `
@@ -171,10 +170,11 @@ const StepImage = styled.img`
 
 const LearnMoreButton = styled(Link)`
     box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.1);
-    background: #ef4c4c;
-    border-radius: 2px;
+    background: rgba(208, 35, 58, 0.92);
+    background: rgba(204, 59, 78, 0.92);
+    border-radius: 50px;
     color: white;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 13px;
     border: none;
     width: 117px;

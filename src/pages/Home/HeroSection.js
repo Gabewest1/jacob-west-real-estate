@@ -30,7 +30,6 @@ const HeroView = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
     
     @media (max-width: 1000px) {
         background-size: 322%;
