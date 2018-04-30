@@ -51,6 +51,7 @@ const FooterContainer = styled.div`
 const FooterPageLinks = styled(PageLinks)`
     letter-spacing: 0.01rem;
     color: #b1b1b1;
+    width: 50%;
     text-transform: uppercase;
     @media (max-width: 1000px) {
         display: none;
