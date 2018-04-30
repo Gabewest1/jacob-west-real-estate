@@ -93,7 +93,7 @@ const LeaveMessageWrapper = styled.div`
 `
 const Body = styled.div`
     display: flex;
-    // flex-direction: column-reverse;
+    flex-direction: column-reverse;
     justify-content: space-between;
     padding-bottom: 100px;
     @media (min-width: 768px) {
