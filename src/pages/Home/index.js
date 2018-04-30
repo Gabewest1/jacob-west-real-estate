@@ -5,6 +5,7 @@ import AboutSection from "./AboutSection"
 import TestimonialsSection from "./TestimonialsSection"
 import FeaturedNeighborhoodsSection from "./FeaturedNeighborhoodsSection"
 import GettingStartedSection from "./GettingStartedSection"
+import ContactSection from "./ContactSection"
 
 class Home extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class Home extends React.Component {
                 <TestimonialsSection />
                 <FeaturedNeighborhoodsSection />
                 <GettingStartedSection />
+                <ContactSection />
             </HomeView>
         )
     }

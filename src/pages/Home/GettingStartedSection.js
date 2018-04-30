@@ -192,5 +192,5 @@ const GettingStartedAccent = styled.div`
     width: 30px;
     height: 3px;
     background: #242424;
-    margin-top: 160px;
+    margin-top: 110px;
 `

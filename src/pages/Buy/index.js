@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import SectionHeader from "../../components/SectionHeader"
 import SectionSubHeader from "../../components/SectionSubHeader"
-import ContactForm from "../../components/ContactForm"
+import ContactForm from "../../components/ContactFormAndInfo/ContactForm"
 import SiteWrapper from "../../components/SiteWrapper"
 
 class Buy extends React.Component {
