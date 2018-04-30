@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import SectionHeader from "../../components/SectionHeader"
 import SectionSubHeader from "../../components/SectionSubHeader"
-import ContactForm from "../../components/ContactForm"
+import ContactForm from "../../components/ContactFormAndInfo/ContactForm"
 import SiteWrapper from "../../components/SiteWrapper"
 
 class Buy extends React.Component {
@@ -79,6 +79,7 @@ const Wrapper = styled.div`
 const Body = styled.div``
 const BuyView = styled.div`
     padding: 60px 0;
+    background: white;
 `
 
 export default Buy

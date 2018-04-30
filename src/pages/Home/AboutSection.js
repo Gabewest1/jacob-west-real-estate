@@ -8,7 +8,7 @@ class AboutSection extends React.Component {
         return (
             <AboutView>
                 <AboutViewContainer>
-                    <SectionHeader blueWord="About" greyWord="Us" />
+                    <SectionHeader blueWord="About" greyWord="Us" noWrap={false} />
 
                     <AboutImgAndTextContainer>
                         <AboutTextContainer>
@@ -64,6 +64,7 @@ const AboutView = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: white;
 `
 
 const AboutViewContainer = styled.div`
@@ -71,6 +72,9 @@ const AboutViewContainer = styled.div`
     margin-top: 130px;
     display: flex;
     flex-direction: column;    
+    @media (max-width: 1000px) {
+        margin-top: 45px;
+    }
 `
 
 const AboutImgAndTextContainer = styled.div`
@@ -78,18 +82,36 @@ const AboutImgAndTextContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 40px;    
+    @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 `
 
 const ClientImgWrapper = styled.div`
     width: 284px;
+    @media (max-width: 1000px) {
+        width: 70%;
+        margin-top: -32px;
+        border-radius: 50%;
+    }
 `
 
 const ClientImg = styled.img`
     width: 100%;
+    @media (max-width: 1000px) {
+        border-radius: 50%;
+    }
 `
 
 const AboutTextContainer = styled.div`
-    width: 66%;
+    width: 100%;
+    @media (max-width: 1000px) {
+        border-radius: 50%;
+        width: 100%;
+        // text-align: justify;
+        margin-top: 10px;
+    }
 `
 
 const SocialMediaLinksContainer = styled.div`

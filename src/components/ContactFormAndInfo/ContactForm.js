@@ -31,6 +31,7 @@ const TextArea = styled.textarea`
     margin: 0;
     box-sizing: border-box;
     background: #c3c3c3;
+    resize: none;
 `
 const SubmitButton = styled.button`
     width: 100%;

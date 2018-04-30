@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types"
 
 class SectionHeader extends React.Component {
     render() {
@@ -17,24 +18,38 @@ class SectionHeader extends React.Component {
     }
 }
 
+SectionHeader.propTypes = {
+    blueWord: PropTypes.string,
+    greyWord: PropTypes.string,
+    whiteSpace: PropTypes.string,
+}
+
 const SectionHeaderContainer = styled.div`
+    width: 100%;    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    text-align: center;
+    @media (max-width: 1000px) {
+        justify-content: center;
+    }
 `
 
 const BlueText = styled.h1`
     font-family: raleway;
-    font-weight: 300;
-    font-size: 2.3em;
+    font-weight: 200;
+    font-size: 40px;
     letter-spacing: 0.3rem;
     text-transform: uppercase;  
+    text-align: center;
     color: #003e75;
-    background: white;
     box-sizing: border-box;
     padding: 0 1em;
-    white-space: nowrap;
+    // white-space: nowrap;
+    @media (max-width: 1000px) {
+        padding: 0;
+        font-size: 28px;
+    }
 `
 
 const GreyText = styled.span`
@@ -42,15 +57,21 @@ const GreyText = styled.span`
 `
 
 const BlueLine = styled.div`
-    width: 100%;
+    width: 50%;
     height: 1px;
-    background: rgba(113, 147, 176, 0.95);
+    background: rgba(7, 85, 150, 0.5);
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `
 
 const GreyLine = styled.div`
-    width: 100%;
+    width: 50%;
     height: 1px;
-    background: rgb(140, 140, 140);
+    background: rgba(140, 140, 140, 0.55);
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `
 
 export default SectionHeader

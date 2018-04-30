@@ -31,7 +31,7 @@ const App = () => (
             path="/"
             component={props => (
                 <AppView path={props.location.pathname}>
-                    <Navbar style={{ height: NAVBAR_HEIGHT }} />
+                    <Navbar />
 
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />

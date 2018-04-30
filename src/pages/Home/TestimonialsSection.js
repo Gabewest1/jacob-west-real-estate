@@ -38,6 +38,8 @@ const TestimonialsView = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
+    background: white;
+    
 `
 
 const TestimonialsViewContainer = styled.div`
@@ -49,12 +51,16 @@ const TestimonialsViewContainer = styled.div`
     h3{
         color: #2b2b2b;
     }
+    @media (max-width: 1000px) {
+        margin-top: 140px;
+    }
 `
 
 const TestimonialsAccentHome = styled.div`
     width: 30px;
     height: 3px;
-    background: #1e1e1e;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
 `
 
 const TestimonialsContainer = styled.div`
@@ -62,6 +68,10 @@ const TestimonialsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 100px;
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        margin-top: 30px;
+    }
 `
 
 export default TestimonialsSection
