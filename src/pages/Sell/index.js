@@ -11,6 +11,8 @@ class Sell extends React.Component {
     }
 }
 
-const SellView = styled.div``
+const SellView = styled.div`
+    background: white;
+`
 
 export default Sell

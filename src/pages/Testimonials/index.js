@@ -11,6 +11,8 @@ class Testimonials extends React.Component {
     }
 }
 
-const TestimonialsView = styled.div``
+const TestimonialsView = styled.div`
+    background: white;
+`
 
 export default Testimonials

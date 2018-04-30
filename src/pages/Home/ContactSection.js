@@ -1,31 +1,29 @@
 import React from "react"
 import styled from "styled-components"
+import ContactFormAndInfoView from "../../components/ContactFormAndInfo/"
 import SectionHeader from "../../components/SectionHeader"
-import ContactFormAndInfo from "../../components/ContactFormAndInfo/"
 import SiteContainer from "../../components/SiteContainer/"
 
-class ContactPage extends React.Component {
+class ContactSection extends React.Component {
     render() {
         return (
-            <ContactPageView>
+            <ContactSectionView>
                 <SiteContainer>
                     <SectionHeader blueWord="Contact" greyWord="Jacob" />
-                    <ContactFormAndInfo />
+
+                    <ContactFormAndInfoView />
                 </SiteContainer>
-            </ContactPageView>
+            </ContactSectionView>
         )
     }
 }
 
-const ContactPageView = styled.div`
-    background: white;
+const ContactSectionView = styled.div`
     width: 100%;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 140px;
 `
-// const ContactPageViewContainer = styled.div`
-//     width: ${WIDTH_OF_ALL_CONTAINERS};
-// `
-
-export default ContactPage
+export default ContactSection
