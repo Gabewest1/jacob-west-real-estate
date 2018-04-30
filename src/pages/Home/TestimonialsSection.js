@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 import HomeTestimonial from "../../components/HomeTestimonial"
+import SiteContainer from "../../components/SiteContainer/"
 
 class TestimonialsSection extends React.Component {
     render() {
         return (
             <TestimonialsView>
-                <TestimonialsViewContainer>
+                <SiteContainer>
                     <h3>But don&#39;t just take my word for it.</h3>
 
                     <TestimonialsAccentHome />
@@ -28,7 +28,7 @@ class TestimonialsSection extends React.Component {
                             clientWords="I was incredibly absolutly impressed withon my house within DAYS of listing, just as he hoped to when I signed on with Benefit."
                         />
                     </TestimonialsContainer>
-                </TestimonialsViewContainer>
+                </SiteContainer>
             </TestimonialsView>
         )
     }
@@ -39,23 +39,15 @@ const TestimonialsView = styled.div`
     display: flex;
     justify-content: center;
     background: white;
-    
-`
-
-const TestimonialsViewContainer = styled.div`
-    width: ${WIDTH_OF_ALL_CONTAINERS};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 120px;
+    padding-top: 120px;
     h3{
         color: #2b2b2b;
     }
     @media (max-width: 1000px) {
-        margin-top: 140px;
+        padding-top: 140px;
     }
+    
 `
-
 const TestimonialsAccentHome = styled.div`
     width: 30px;
     height: 3px;

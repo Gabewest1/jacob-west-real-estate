@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
 import PageLinks from "../../components/PageLinks"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 
 class Navbar extends React.Component {
     state = {
@@ -47,7 +46,7 @@ const NavbarView = styled.div`
     }
 `
 const NavbarContainer = styled.div`
-    width: ${WIDTH_OF_ALL_CONTAINERS};
+    width: 74%;
     display: flex;
     justify-content: space-between;
     align-items: center;

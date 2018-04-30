@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import SectionHeader from "../../components/SectionHeader"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
+import SiteContainer from "../../components/SiteContainer/"
 
 class AboutSection extends React.Component {
     render() {
         return (
             <AboutView>
-                <AboutViewContainer>
+                <SiteContainer>
                     <SectionHeader blueWord="About" greyWord="Us" noWrap={false} />
 
                     <AboutImgAndTextContainer>
@@ -53,7 +53,7 @@ class AboutSection extends React.Component {
                             <SocialMediaIcon src="/assets/instagram.svg" />
                         </SocialMediaLinkWrapper>
                     </SocialMediaLinksContainer>
-                </AboutViewContainer>
+                </SiteContainer>
             </AboutView>
         )
     }
@@ -65,15 +65,9 @@ const AboutView = styled.div`
     flex-direction: column;
     align-items: center;
     background: white;
-`
-
-const AboutViewContainer = styled.div`
-    width: ${WIDTH_OF_ALL_CONTAINERS};
-    margin-top: 130px;
-    display: flex;
-    flex-direction: column;    
+    padding-top: 130px;
     @media (max-width: 1000px) {
-        margin-top: 45px;
+        padding-top: 45px;
     }
 `
 

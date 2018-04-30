@@ -4,13 +4,13 @@ import styled from "styled-components"
 import SectionHeader from "../../components/SectionHeader"
 import SectionSubHeader from "../../components/SectionSubHeader"
 import ContactForm from "../../components/ContactFormAndInfo/ContactForm"
-import SiteWrapper from "../../components/SiteWrapper"
+import SiteContainer from "../../components/SiteContainer"
 
 class Buy extends React.Component {
     render() {
         return (
             <BuyView {...this.props}>
-                <SiteWrapper>
+                <SiteContainer>
                     <SectionHeaderNoMargin blueWord="Buyers" />
 
                     <SectionSubHeader>This is text for the sub header</SectionSubHeader>
@@ -40,7 +40,7 @@ class Buy extends React.Component {
 
                         <ContactForm />
                     </Body>
-                </SiteWrapper>
+                </SiteContainer>
             </BuyView>
         )
     }

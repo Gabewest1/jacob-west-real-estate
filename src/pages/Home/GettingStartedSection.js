@@ -1,14 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 import SectionHeader from "../../components/SectionHeader"
+import SiteContainer from "../../components/SiteContainer/"
 
 class GettingStartedSection extends React.Component {
     render() {
         return (
             <GettingStartedView>
-                <GettingStartedViewContainer>
+                <SiteContainer>
                     <SectionHeader blueWord="Getting" greyWord="started" />
 
                     <h3>Having to exist in this world can be hard Jacob.</h3>
@@ -80,7 +80,7 @@ class GettingStartedSection extends React.Component {
                         Property values are always going to be around, never get to know
                         what you can or can&#39;t just by asking.
                     </p>
-                </GettingStartedViewContainer>
+                </SiteContainer>
             </GettingStartedView>
         )
     }
@@ -95,14 +95,7 @@ const GettingStartedView = styled.div`
     justify-content: center;
     text-align: center;
     background: white;
-`
-
-const GettingStartedViewContainer = styled.div`
-    width: ${WIDTH_OF_ALL_CONTAINERS};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 170px;
+    padding-top: 170px;
     h3{
         margin-top: 46px;
     }
@@ -110,7 +103,7 @@ const GettingStartedViewContainer = styled.div`
         text-align: center;
     }
     @media (max-width: 1000px) {
-        margin-top: 138px;
+        padding-top: 138px;
         h3{
             margin-top: 10px;
             font-size: 16px;

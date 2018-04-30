@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import SectionHeader from "../../components/SectionHeader"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
+import SiteContainer from "../../components/SiteContainer/"
 
 class FeaturedNeighborhoodsSection extends React.Component {
     render() {
         return (
             <FeaturedNeighborhoodsView>
-                <FeaturedNeighborhoodsViewContainer>
+                <SiteContainer>
                     <SectionHeader blueWord="Featured" greyWord="Neighborhoods" />
 
                     <p>
@@ -53,7 +53,7 @@ class FeaturedNeighborhoodsSection extends React.Component {
                     </HoodsContainer>
 
                     <p style={{ marginTop: "60px" }}>Property ownership can be a big deal with.</p>
-                </FeaturedNeighborhoodsViewContainer>
+                </SiteContainer>
             </FeaturedNeighborhoodsView>
         )
     }
@@ -64,19 +64,12 @@ const FeaturedNeighborhoodsView = styled.div`
     display: flex;
     justify-content: center;
     background: white;
-`
-
-const FeaturedNeighborhoodsViewContainer = styled.div`
-    width: ${WIDTH_OF_ALL_CONTAINERS};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 180px;
+    padding-top: 180px;
     p{
         text-align: center;
     }
     @media (max-width: 1000px) {
-        margin-top 130px;
+        padding-top 130px;
     }
 `
 

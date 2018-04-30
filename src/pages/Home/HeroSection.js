@@ -1,18 +1,19 @@
 import React from "react"
 import styled from "styled-components"
-import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
+// import { WIDTH_OF_ALL_CONTAINERS } from "../../constants"
 import Mls from "../../components/Mls"
+import SiteContainer from "../../components/SiteContainer/"
 
 class HeroSection extends React.Component {
     render() {
         return (
             <HeroView>
-                <HeroViewContainer>
+                <SiteContainer>
                     <HeroHeader>
                         The search for your new <BoldenWord>home </BoldenWord>starts here.
                     </HeroHeader>
                     <Mls />
-                </HeroViewContainer>
+                </SiteContainer>
             </HeroView>
         )
     }
@@ -36,15 +37,6 @@ const HeroView = styled.div`
         background-position: 34% 78%;
     }
 `
-
-const HeroViewContainer = styled.div`
-    width: ${WIDTH_OF_ALL_CONTAINERS};
-    position: absolute;
-    @media (max-width: 1000px) {
-        bottom: 170px;
-    }
-`
-
 const HeroHeader = styled.div`
     font-size: 50px;
     color: rgb(250, 250, 250);
@@ -54,6 +46,7 @@ const HeroHeader = styled.div`
     letter-spacing: -0.1rem;
     position: relative;
     top: 6px;
+    align-self: flex-start;
     @media (max-width: 1000px) {
         line-height: 1em;
         font-size: 40px;
