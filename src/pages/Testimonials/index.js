@@ -6,8 +6,7 @@ import SectionSubHeader from "../../components/SectionSubHeader"
 import SiteContainer from "../../components/SiteContainer"
 
 import testimonialsData from "./testimonialsData"
-import { GREY } from "../../constants"
-
+import { GREY, PAGE_PADDING } from "../../constants"
 
 class Testimonials extends React.Component {
     render() {
@@ -65,6 +64,7 @@ const QuoteView = styled.div`
     }
 `
 const TestimonialsView = styled.div`
+    ${PAGE_PADDING}
     background: white;
 `
 
