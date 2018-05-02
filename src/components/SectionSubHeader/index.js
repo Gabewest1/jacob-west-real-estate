@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types"
 
+import { GREY } from "../../constants"
+
 const SectionSubHeaderView = styled.h3`
     text-align: center;
     position: relative;
@@ -12,7 +14,7 @@ const SectionSubHeaderView = styled.h3`
         position: absolute;
         bottom: 0;
         left: 50%;
-        background: #525252;
+        background: ${GREY};
         width: 45px;
         height: 3px;
         transform: translateX(-50%);
