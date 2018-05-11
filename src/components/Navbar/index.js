@@ -34,7 +34,7 @@ const NavbarView = styled.div`
     position: fixed;
     top: 0;
     z-index: 10000;
-    height 74px;
+    height 82px;
     width: 100%;
     background-color: rgb(34, 38, 43);
     display: flex;
@@ -56,7 +56,7 @@ const NavbarContainer = styled.div`
     }
 `
 const LogoLinkToHome = styled(Link)`
-    width: 85px;
+    width: 88px;
     @media (max-width: 1000px) {
         margin-left: 10px;
     }
