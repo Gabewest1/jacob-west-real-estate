@@ -37,7 +37,7 @@ const SectionHeaderContainer = styled.div`
 
 const BlueText = styled.h1`
     font-family: raleway;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 40px;
     letter-spacing: 0.3rem;
     text-transform: uppercase;  
