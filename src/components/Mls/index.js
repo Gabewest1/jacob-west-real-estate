@@ -1,21 +1,94 @@
 import React from "react"
 import styled from "styled-components"
 
+import Baths from "./Baths"
+import Beds from "./Beds"
+import SquareFeet from "./SquareFeet"
+
 class Mls extends React.Component {
+    constructor() {
+        super()
+        this.defaultEditBox = {
+            left: 0,
+            width: 0,
+            height: 0,
+            top: "100%"
+        }
+        this.state = {
+            activeFilter: undefined,
+            editBox: this.defaultEditBox
+        }
+    }
     render() {
+        const { editBox, activeFilter } = this.state
+
         return (
             <MlsContainer {...this.props}>
-                <MlsForm>
+                <MlsForm onSubmit={this._handleSubmit} innerRef={container => this.container = container}>
                     <MlsNumberInput placeholder="Enter City, Neighborhood, Address, Zip or MLS#" />
-                    <MlsFilterOptions>Beds</MlsFilterOptions>
-                    <MlsFilterOptions>Baths</MlsFilterOptions>
-                    <MlsFilterOptions>Sq ft</MlsFilterOptions>
-                    <MlsSubmitButton>Find Homes</MlsSubmitButton>
+                    <MlsFilterOptions 
+                        onClick={this._handleFilterClick}
+                        innerRef={beds => this.beds = beds}
+                    >
+                        Beds
+                    </MlsFilterOptions>
+                    <MlsFilterOptions 
+                        onClick={this._handleFilterClick}
+                        innerRef={bath => this.bath = bath}
+                    >
+                        Baths
+                    </MlsFilterOptions>
+                    <MlsFilterOptions 
+                        onClick={this._handleFilterClick}
+                        innerRef={squareFeet => this.squareFeet = squareFeet}
+                    >
+                        Sq ft
+                     </MlsFilterOptions>
+                    <MlsSubmitButton innerRef={button => this.button = button}>Find Homes</MlsSubmitButton>
+
+                    <EditBox style={editBox}>
+                        {activeFilter === "Beds" ? <Beds />
+                            : activeFilter === "Baths" ? <Baths />
+                            : activeFilter ===  "Sq ft" ? <SquareFeet />
+                            : false
+                        }
+                    </EditBox>
                 </MlsForm>
             </MlsContainer>
         )
     }
+    _handleSubmit = (e) => {
+        e.preventDefault()
+    }
+    _handleFilterClick = (e) => {
+        e.preventDefault()
+
+        const activeFilter = e.target.textContent
+        const didClickAlreadyActiveFilter = activeFilter === this.state.activeFilter 
+
+        if (didClickAlreadyActiveFilter) {
+            this.setState({ activeFilter: false, editBox: this.defaultEditBox})
+        } else {
+            const { x:containerX } = this.container.getBoundingClientRect()
+            const { x:bedX } = this.beds.getBoundingClientRect()
+            const { x:buttonX, width:buttonWidth } = this.button.getBoundingClientRect()
+
+            const left = bedX - containerX
+            const width = (buttonX + buttonWidth) - bedX
+            const height = 250
+            console.log(bedX, (buttonX + buttonWidth), width, height)
+            this.setState({ activeFilter, editBox: { ...this.state.editBox, left, width, height } })
+        }
+    }
 }
+
+const EditBox = styled.div`
+    position: absolute;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+`
 
 const MlsContainer = styled.div`
     width: 100%;
@@ -35,6 +108,7 @@ const MlsForm = styled.form`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     
     @media (max-width: 1000px) {
         flex-direction: column;
