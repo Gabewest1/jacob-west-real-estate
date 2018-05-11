@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
+import "font-awesome/css/font-awesome.min.css"
 import SectionHeader from "../../components/SectionHeader"
 import SiteContainer from "../../components/SiteContainer/"
 
@@ -20,9 +21,8 @@ class GettingStartedSection extends React.Component {
 
                     <ThreeStepProcess>
                         <StepContainer>
-                            <StepImageWrapper>
-                                <StepImage src="/assets/why-us.png" />
-                            </StepImageWrapper>
+                            <WhyUsIcon />
+
                             
                             <h3>Why Us</h3>
 
@@ -38,9 +38,7 @@ class GettingStartedSection extends React.Component {
                         </StepContainer>
 
                         <StepContainer>
-                            <StepImageWrapper>
-                                <StepImage src="/assets/buy.png" />
-                            </StepImageWrapper>
+                            <BuyIcon />
 
                             <h3>Buying</h3>
 
@@ -56,9 +54,8 @@ class GettingStartedSection extends React.Component {
                         </StepContainer>
 
                         <StepContainer>
-                            <StepImageWrapper>
-                                <StepImage src="/assets/sell.png" />
-                            </StepImageWrapper>
+                            <SellIcon />
+
 
                             <h3>Selling</h3>
 
@@ -150,28 +147,49 @@ const StepContainer = styled.div`
     }
 `
 
-const StepImageWrapper = styled.div`
-    width: 110px;
-    @media (max-width: 1000px) {
-        width: 130px;
+const Icons = styled.div`
+  z-index: 200;
+  ::before{
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        font-size: 3.9em;
+        color: rgb(36, 123, 122);
     }
 `
 
-const StepImage = styled.img`
-    width: 100%;
+const WhyUsIcon = styled(Icons)`
+    ::before{
+        content: "\\f0c0";
+        font-size: 3.5em;
+    }
+`
+
+const BuyIcon = styled(Icons)`
+    ::before{
+        content: "\\f084";
+    }
+`
+
+const SellIcon = styled(Icons)`
+    ::before{
+        content: "\\f015";
+    }
 `
 
 const LearnMoreButton = styled(Link)`
     box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.1);
-    background: rgba(208, 35, 58, 0.92);
-    background: rgba(204, 59, 78, 0.92);
     border-radius: 50px;
-    color: white;
-    font-weight: 400;
-    font-size: 13px;
-    border: none;
+    color: #5181d4;
+    font-weight: 500;
+    letter-spacing: 0.04rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-feature-settings: "c2sc" 1;
+    border: #7386ff 1px solid;
     width: 117px;
-    height: 30px;
+    height: 29px;
     display: flex;
     justify-content: center;
     align-items: center;
