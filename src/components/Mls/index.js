@@ -13,14 +13,13 @@ const SQ_FT = "Sq ft"
 class Mls extends React.Component {
     constructor() {
         super()
-        this.defaultEditBox = {
-            width: 0,
-            height: 90,
-            top: "100%"
-        }
+
         this.state = {
             activeFilter: undefined,
-            editBox: this.defaultEditBox
+            editBox: {
+                left: undefined,
+                width: undefined
+            }
         }
     }
     render() {
@@ -29,7 +28,7 @@ class Mls extends React.Component {
         return (
             <MlsContainer {...this.props} innerRef={container => this.container = container}>
                 <MlsForm onSubmit={this._handleSubmit}>
-                    <MlsNumberInput placeholder="Enter City, Neighborhood, Address or Zip" />
+                    <Input placeholder="Enter City, Neighborhood, Address or Zip" name="mlsSearch" />
                     <MlsFilterOptions 
                         isActive={activeFilter === BEDS}
                         innerRef={beds => this.beds = beds}
@@ -70,15 +69,16 @@ class Mls extends React.Component {
         const didClickAlreadyActiveFilter = nextActiveFilter === this.state.activeFilter
 
         if (didClickAlreadyActiveFilter) {
-            this.setState({ activeFilter: false, editBox: this.defaultEditBox})
+            this.setState({ activeFilter: false })
         } else {
             const { x:containerX, width: containerWidth } = this.container.getBoundingClientRect()
             const { x:bedX } = this.beds.getBoundingClientRect()
 
-            const left = bedX - containerX
+            const left = getComputedStyle(document.querySelector("[name=mlsSearch]")).width;
+
             const width = (containerX + containerWidth) - bedX
             console.log(bedX, width)
-            this.setState({ activeFilter: nextActiveFilter, editBox: { ...this.state.editBox, width } })
+            this.setState({ activeFilter: nextActiveFilter, editBox: { ...this.state.editBox, width, left } })
         }
     }
 }
@@ -88,10 +88,13 @@ const SEARCH_BAR_WIDTH = 300
 const EditBox = styled.div`
     position: absolute;
     background: lightgray;
-    display: ${({ isActive }) => isActive ? "flex" : "none"};
+    display: flex;
+    height: ${({ isActive }) => isActive ? "91px" : "0px"};
     align-items: center;
     justify-content: space-around;
-    left: ${SEARCH_BAR_WIDTH}px;
+    transition: all .2s ease-in;
+    overflow: hidden;
+    top: 100%;
 
     > * {
         display: flex;
@@ -115,7 +118,7 @@ const EditBox = styled.div`
     }
 
     @media (max-width: 1000px) {
-        left: 0;
+        left: 0 !important;
         width: 100% !important;
         position: relative;
     }
@@ -146,7 +149,7 @@ const MlsForm = styled.form`
     }
 `
 
-const MlsNumberInput = styled.input`
+const Input = styled.input`
     min-width: ${SEARCH_BAR_WIDTH}px;
     width: 100%;
     height: 47px;
@@ -196,6 +199,8 @@ const MlsFilterOptions = styled.div`
         align-items: center;
         height: 45px;
         width: 100%;
+        position: relative;
+        z-index: 1;
     }
 
     @media (max-width: 1000px) {
