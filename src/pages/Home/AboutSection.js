@@ -75,7 +75,8 @@ const AboutImgAndTextContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;    
+    margin-top: 40px;
+    
     @media (max-width: 1000px) {
         flex-direction: column-reverse;
         align-items: center;
@@ -99,11 +100,16 @@ const ClientImg = styled.img`
 `
 
 const AboutTextContainer = styled.div`
-    width: 100%;
+    width: 80%;
+    margin-right: 15px;
+
+    h3 {
+        margin-top: 0;
+    }
+
     @media (max-width: 1000px) {
         border-radius: 50%;
         width: 100%;
-        // text-align: justify;
         margin-top: 10px;
     }
 `
