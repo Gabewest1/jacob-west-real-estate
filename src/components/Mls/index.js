@@ -66,8 +66,6 @@ class Mls extends React.Component {
         e.preventDefault()
     }
     _handleFilterClick = (e) => {
-        e.preventDefault()
-
         const nextActiveFilter = e.target.textContent
         const didClickAlreadyActiveFilter = nextActiveFilter === this.state.activeFilter
 
@@ -115,6 +113,12 @@ const EditBox = styled.div`
             box-sizing: border-box;
         }
     }
+
+    @media (max-width: 1000px) {
+        left: 0;
+        width: 100% !important;
+        position: relative;
+    }
 `
 
 const MlsContainer = styled.div`
@@ -144,6 +148,7 @@ const MlsForm = styled.form`
 
 const MlsNumberInput = styled.input`
     min-width: ${SEARCH_BAR_WIDTH}px;
+    width: 100%;
     height: 47px;
     box-sizing: border-box;
     padding: 0;
@@ -172,36 +177,33 @@ const MlsNumberInput = styled.input`
     }
 `
 
-const MlsFilterOptions = styled.button`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+const MlsFilterOptions = styled.div`
     width: 300px;
-    height: 47px;
     background-color: ${({ isActive }) => isActive ? "lightgray" : "#ececec"};
     color: rgba(113, 113, 113, 0.832);
     border: rgba(170, 170, 170, 0.6) 1px solid; 
     border-left: none;   
-    padding-left: 12px;
     box-sizing: border-box;
     font-size: 13px;
     letter-spacing: 0.035rem;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     outline: none;
-
+    
     span {
+        padding-left: 12px;
         display: flex;
         align-items: center;
         height: 45px;
         width: 100%;
     }
+
     @media (max-width: 1000px) {
         border-left: rgba(170, 170, 170, 0.6) 1px solid;
         border-top: none;
         width: 100%;
         font-size: 12px;
-        height: 58px;
+        flex-direction: column;
     }
 `
 
