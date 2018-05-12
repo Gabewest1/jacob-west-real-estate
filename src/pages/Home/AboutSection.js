@@ -8,7 +8,7 @@ class AboutSection extends React.Component {
         return (
             <AboutView>
                 <SiteContainer>
-                    <SectionHeader blueWord="About" greyWord="Us" noWrap={false} />
+                    <SectionHeader blueWord="About" greyWord="Us" noWrap />
 
                     <AboutImgAndTextContainer>
                         <AboutTextContainer>
