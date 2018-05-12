@@ -154,7 +154,7 @@ const Input = styled.input`
     width: 100%;
     height: 47px;
     box-sizing: border-box;
-    padding: 0;
+    padding: 0 15px;
     margin: 0;
     background-color: rgb(250, 250, 250);
     border: #c4c4c4 1px solid;
@@ -169,7 +169,7 @@ const Input = styled.input`
         font-size: 15px;
         font-weight: 300;   
         font-family: 'Roboto', sans-serif;
-        padding-left: 10px;
+
         @media (max-width: 1000px) {
             font-size: 11px;
         }
