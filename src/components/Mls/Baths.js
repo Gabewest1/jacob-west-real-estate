@@ -3,8 +3,9 @@ import styled from "styled-components"
 
 const Baths = props => (
     <BathsView {...props}>
-        <input type="text" name="bathsMin" placeholder="min" />
-        <input type="text" name="bathsMax" placeholder="max" />
+        <p>Baths:</p>
+        <input type="number" name="bathsMin" placeholder="min" min={0} />
+        <input type="number" name="bathsMax" placeholder="max" min={0} />
     </BathsView>
 )
 

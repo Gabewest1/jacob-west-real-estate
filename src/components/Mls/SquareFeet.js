@@ -3,8 +3,9 @@ import styled from "styled-components"
 
 const SquareFeet = props => (
     <SquareFeetView {...props}>
-        <input type="text" name="squareFeetMin" placeholder="min" />
-        <input type="text" name="squareFeetMax" placeholder="max" />
+        <p>Square Feet:</p>
+        <input type="number" name="squareFeetMin" placeholder="min" min={0} />
+        <input type="number" name="squareFeetMax" placeholder="max" min={0} />
     </SquareFeetView>
 )
 

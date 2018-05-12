@@ -15,7 +15,7 @@ class Mls extends React.Component {
         super()
         this.defaultEditBox = {
             width: 0,
-            height: 55,
+            height: 90,
             top: "100%"
         }
         this.state = {
@@ -29,37 +29,35 @@ class Mls extends React.Component {
         return (
             <MlsContainer {...this.props} innerRef={container => this.container = container}>
                 <MlsForm onSubmit={this._handleSubmit}>
-                    <MlsNumberInput placeholder="Enter City, Neighborhood, Address, Zip or MLS#" />
+                    <MlsNumberInput placeholder="Enter City, Neighborhood, Address or Zip" />
                     <MlsFilterOptions 
                         isActive={activeFilter === BEDS}
-                        onClick={this._handleFilterClick}
                         innerRef={beds => this.beds = beds}
                     >
-                        Beds
+                        <span onClick={this._handleFilterClick}>Beds</span>
+                        <EditBox style={editBox} isActive={activeFilter === BEDS}>
+                            <Beds />
+                        </EditBox>
                     </MlsFilterOptions>
                     <MlsFilterOptions 
                         isActive={activeFilter === BATHS}
-                        onClick={this._handleFilterClick}
                         innerRef={bath => this.bath = bath}
                     >
-                        Baths
+                        <span onClick={this._handleFilterClick}>Baths</span>
+                        <EditBox style={editBox} isActive={activeFilter === BATHS}>
+                            <Baths />
+                        </EditBox>
                     </MlsFilterOptions>
                     <MlsFilterOptions 
                         isActive={activeFilter === SQ_FT}
-                        onClick={this._handleFilterClick}
                         innerRef={squareFeet => this.squareFeet = squareFeet}
                     >
-                        Sq ft
+                        <span onClick={this._handleFilterClick}>Sq ft</span>
+                        <EditBox style={editBox} isActive={activeFilter === SQ_FT}>
+                            <SquareFeet />
+                        </EditBox>
                      </MlsFilterOptions>
                     <MlsSubmitButton innerRef={button => this.button = button}>Find Homes</MlsSubmitButton>
-
-                    <EditBox style={editBox}>
-                        {activeFilter === BEDS ? <Beds />
-                            : activeFilter === BATHS ? <Baths />
-                            : activeFilter ===  SQ_FT ? <SquareFeet />
-                            : false
-                        }
-                    </EditBox>
                 </MlsForm>
             </MlsContainer>
         )
@@ -70,8 +68,8 @@ class Mls extends React.Component {
     _handleFilterClick = (e) => {
         e.preventDefault()
 
-        const activeFilter = e.target.textContent
-        const didClickAlreadyActiveFilter = activeFilter === this.state.activeFilter
+        const nextActiveFilter = e.target.textContent
+        const didClickAlreadyActiveFilter = nextActiveFilter === this.state.activeFilter
 
         if (didClickAlreadyActiveFilter) {
             this.setState({ activeFilter: false, editBox: this.defaultEditBox})
@@ -82,7 +80,7 @@ class Mls extends React.Component {
             const left = bedX - containerX
             const width = (containerX + containerWidth) - bedX
             console.log(bedX, width)
-            this.setState({ activeFilter, editBox: { ...this.state.editBox, width } })
+            this.setState({ activeFilter: nextActiveFilter, editBox: { ...this.state.editBox, width } })
         }
     }
 }
@@ -92,16 +90,23 @@ const SEARCH_BAR_WIDTH = 300
 const EditBox = styled.div`
     position: absolute;
     background: lightgray;
-    display: flex;
+    display: ${({ isActive }) => isActive ? "flex" : "none"};
     align-items: center;
     justify-content: space-around;
     left: ${SEARCH_BAR_WIDTH}px;
 
     > * {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
-        padding: 0 12px;
+        padding: 12px;
+
+        p {
+            margin: 0 0 5px 0;
+            width: 100%;
+            text-align: left;
+        }
 
         input {
             height: 35px;
@@ -183,6 +188,14 @@ const MlsFilterOptions = styled.button`
     letter-spacing: 0.035rem;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+    outline: none;
+
+    span {
+        display: flex;
+        align-items: center;
+        height: 45px;
+        width: 100%;
+    }
     @media (max-width: 1000px) {
         border-left: rgba(170, 170, 170, 0.6) 1px solid;
         border-top: none;
