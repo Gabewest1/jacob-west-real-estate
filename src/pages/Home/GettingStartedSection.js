@@ -155,7 +155,7 @@ const Icons = styled.div`
         font-weight: normal;
         text-decoration: inherit;
         font-size: 3.9em;
-        color: rgb(36, 123, 122);
+        color: #2c7e95;
     }
 `
 

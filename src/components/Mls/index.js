@@ -188,7 +188,6 @@ const MlsSubmitButton = styled.button`
         letter-spacing: 0.025rem;
         height: 50px;
         font-size: 16px;
-        background: #e74b6c;
         font-weight: 500;
     }
 `

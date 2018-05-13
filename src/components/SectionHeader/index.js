@@ -45,7 +45,7 @@ const BlueText = styled.h1`
     color: #003e75;
     box-sizing: border-box;
     padding: 0 1em;
-    // white-space: nowrap;
+    white-space: nowrap;
     @media (max-width: 1000px) {
         padding: 0;
         font-size: 28px;
