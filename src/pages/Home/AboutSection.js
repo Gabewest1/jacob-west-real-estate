@@ -8,7 +8,7 @@ class AboutSection extends React.Component {
         return (
             <AboutView>
                 <SiteContainer>
-                    <SectionHeader blueWord="About" greyWord="Us" noWrap={false} />
+                    <SectionHeader blueWord="About" greyWord="Us" noWrap />
 
                     <AboutImgAndTextContainer>
                         <ClientImgWrapper>
@@ -76,7 +76,8 @@ const AboutImgAndTextContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;    
+    margin-top: 40px;
+    
     @media (max-width: 1000px) {
         flex-direction: column-reverse;
         align-items: center;
@@ -101,11 +102,16 @@ const ClientImg = styled.img`
 `
 
 const AboutTextContainer = styled.div`
-    width: 67%;
+    width: 80%;
+    margin-right: 15px;
+
+    h3 {
+        margin-top: 0;
+    }
+
     @media (max-width: 1000px) {
         border-radius: 50%;
         width: 100%;
-        // text-align: justify;
         margin-top: 10px;
     }
 `

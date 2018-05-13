@@ -3,8 +3,9 @@ import styled from "styled-components"
 
 const Beds = props => (
     <BedsView {...props}>
-        <input type="text" name="bedsMin" placeholder="min" />
-        <input type="text" name="bedsMax" placeholder="max" />
+        <p>Beds:</p>
+        <input type="number" name="bedsMin" placeholder="min" min={0} />
+        <input type="number" name="bedsMax" placeholder="max" min={0} />
     </BedsView>
 )
 

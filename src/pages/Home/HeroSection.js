@@ -7,7 +7,7 @@ import SiteContainer from "../../components/SiteContainer/"
 class HeroSection extends React.Component {
     render() {
         return (
-            <HeroView>
+            <HeroView id="hero">
                 <SiteContainer>
                     <HeroHeader>
                         The search for your new <BoldenWord>home </BoldenWord>starts here.
