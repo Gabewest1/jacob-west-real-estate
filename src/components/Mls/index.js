@@ -61,6 +61,12 @@ class Mls extends React.Component {
             </MlsContainer>
         )
     }
+    componentDidMount = () => {
+        document.getElementById("hero").addEventListener("click", this._removeActiveFilter)
+    }
+    componentWillUnmount = () => {
+        document.getElementById("hero").removeEventListener("click", this._removeActiveFilter)        
+    }
     _handleSubmit = (e) => {
         e.preventDefault()
     }
@@ -79,6 +85,11 @@ class Mls extends React.Component {
             const width = (containerX + containerWidth) - bedX
             console.log(bedX, width)
             this.setState({ activeFilter: nextActiveFilter, editBox: { ...this.state.editBox, width, left } })
+        }
+    }
+    _removeActiveFilter = (e) => {
+        if (e.target === document.getElementById("hero")) {
+            this.setState({ activeFilter: false })
         }
     }
 }
