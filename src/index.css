@@ -1,24 +1,26 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   background-color: rgb(34, 38, 43);
   
 }
 
 h1, h3 {
   color: #525252;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Segoe UI'; 
+  color: #22262b;
+  color: #383e44;
 }
 
 p {
     line-height: 1.7em;
     color: #5e5e5e;
+    color: #8a8a8a;
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI';
 }
 
-input, textarea, button {
-  font-family: 'Raleway', sans-serif;
+body, input, textarea, button, a, p, h1, h3, h4 {
+  font-family: 'Segoe UI';
 }

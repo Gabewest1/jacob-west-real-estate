@@ -53,9 +53,11 @@ const SubHeader = styled.h3``
 const ContactMessage = styled.p``
 const ContactTitle = styled.h3`
     font-size: 16px;
+    font-weight: 600;
 `
 const ContactInfo = styled.p`
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 400;
 `
 const ContactWrapper = styled.div`
     margin-bottom: 10px;
@@ -96,6 +98,7 @@ const Body = styled.div`
     flex-direction: column-reverse;
     justify-content: space-between;
     padding-bottom: 100px;
+    margin-top: 40px;
     @media (min-width: 768px) {
         flex-direction: row;
     }

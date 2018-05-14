@@ -15,8 +15,6 @@ class HomeTestimonial extends React.Component {
                         {this.props.clientWords}
                     </TestimonialText>
 
-                    {/* <TestimonialAccent /> */}
-
                     <TestimonialName>
                         {this.props.clientName}
                     </TestimonialName>
@@ -58,29 +56,14 @@ const TestimonialTextAccentNameContainer = styled.div`
 const TestimonialText = styled.p`
     padding: 0;
     margin: 0;
-    // font-size: 15px;
-    // font-weight: 400;
     font-style: italic;
-    // line-height: 1.7em;
-    font-family: 'Roboto', sans-serif;
-    
-    color: #484848;
     @media (max-width: 1000px) {
         // text-align: justify;
     }
 `
 
-// const TestimonialAccent = styled.div`
-//     width: 20px;
-//     height: 2px;
-//     background: rgba(0, 0, 0, 0.83);
-//     margin-top: 14px;s
-//     border-raidus: 50px;
-// `
-
 const TestimonialName = styled.h4`
     letter-spacing: 0.02rem;
     color: #303030;
-    font-family: raleway;
-    margin-top: 6px;
+    margin-top: 10px;
 `
