@@ -11,6 +11,10 @@ class AboutSection extends React.Component {
                     <SectionHeader blueWord="About" greyWord="Us" noWrap />
 
                     <AboutImgAndTextContainer>
+                        <ClientImgWrapper>
+                            <ClientImg src="/assets/jacob2.jpg" />
+                        </ClientImgWrapper>
+
                         <AboutTextContainer>
                             <h3>Jacob West</h3>
 
@@ -35,9 +39,6 @@ class AboutSection extends React.Component {
                             </p>
 
                         </AboutTextContainer>
-                        <ClientImgWrapper>
-                            <ClientImg src="/assets/jacob2.jpg" />
-                        </ClientImgWrapper>
                     </AboutImgAndTextContainer>
 
                     <SocialMediaLinksContainer>
@@ -84,7 +85,8 @@ const AboutImgAndTextContainer = styled.div`
 `
 
 const ClientImgWrapper = styled.div`
-    width: 284px;
+    width: 300px;
+    margin-top: 20px;
     @media (max-width: 1000px) {
         width: 70%;
         margin-top: -32px;

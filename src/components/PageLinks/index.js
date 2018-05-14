@@ -16,9 +16,11 @@ const PageLinks = props => (
 
 const PageLink = styled(Link)`
     text-decoration: none;
-    font-size: 12px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.04rem;
+    font-weight: 400;
+    font-family: raleway;
+    // text-transform: uppercase;
     color: inherit;
     @media (max-width: 1000px) {
         display: flex;
