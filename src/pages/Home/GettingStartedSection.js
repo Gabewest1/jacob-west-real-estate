@@ -12,9 +12,9 @@ class GettingStartedSection extends React.Component {
                 <SiteContainer>
                     <SectionHeader blueWord="Getting" greyWord="started" />
 
-                    <h3>Having to exist in this world can be hard Jacob.</h3>
+                    <h3 style={{ marginTop: "15px" }}>Having to exist in this world can be hard Jacob.</h3>
 
-                    <p>
+                    <p style={{ marginTop: "0px" }}>
                         Property values are always going to be around, never
                         get to know what you can or can&#39;t just by asking.
                     </p>
@@ -155,26 +155,32 @@ const Icons = styled.div`
         font-weight: normal;
         text-decoration: inherit;
         font-size: 3.9em;
-        color: #2c7e95;
+        color: #e4e4e4;
+        background: #009688;
+        border-radius: 50%;
+        border: #008c7f 3px solid;
     }
 `
 
 const WhyUsIcon = styled(Icons)`
     ::before{
         content: "\\f0c0";
-        font-size: 3.5em;
+        font-size: 3.45em;
+        padding: .178em;
     }
 `
 
 const BuyIcon = styled(Icons)`
     ::before{
         content: "\\f084";
+        padding: .12em .14em;
     }
 `
 
 const SellIcon = styled(Icons)`
     ::before{
         content: "\\f015";
+        padding: .12em .15em;
     }
 `
 

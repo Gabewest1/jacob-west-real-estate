@@ -30,7 +30,7 @@ class AboutSection extends React.Component {
                                 into electronic typesetting, remaining essentially unchanged.
                             </p>
 
-                            <h3 style={{ marginTop: "32px" }}>Remax Elite®</h3>
+                            <h3 style={{ marginTop: "42px" }}>Remax Elite®</h3>
 
                             <p>
                                 Lorem Ipsum has been the industry&#39;s standard dummy text ever
