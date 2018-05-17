@@ -88,7 +88,10 @@ const FeaturedListingsContainer = styled.div``
 
 const FeaturedListingsHeader = styled.h3`
     font-weight: 500;
-    margin-top: 0px;
+    margin-top: -2px;
+    border-bottom: #eee 1px solid;
+    padding-bottom: .3em;
+    width: 47%;
 `
 
 const Featured = styled.div`
@@ -112,6 +115,7 @@ const FeaturedListingsList = styled.div`
     max-height: 490px;
     width: 100%;
     overflow: scroll;
+    margin-top: 25px;
     > * {
         margin-top: 14px;
     }

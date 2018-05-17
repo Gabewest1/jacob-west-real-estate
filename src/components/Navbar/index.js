@@ -36,7 +36,7 @@ const NavbarView = styled.div`
     z-index: 10000;
     height 82px;
     width: 100%;
-    background-color: rgb(34, 38, 43);
+    background-color: rgb(25, 25, 25);
     display: flex;
     flex-direction: column;
     justify-content: center;
