@@ -39,13 +39,16 @@ const SectionHeaderContainer = styled.div`
 const BlueText = styled.h1`
     font-weight: 300;
     font-size: 40px;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;  
+    // letter-spacing: 0.3rem;
+    letter-spacing: 0.16rem;
+    // text-transform: uppercase;  
     text-align: center;
     color: #003e75;
     box-sizing: border-box;
     padding: 0 1em;
     white-space: nowrap;
+    position: relative;
+    bottom: 2px;
     @media (max-width: 1000px) {
         padding: 0;
         font-size: 28px;
@@ -53,13 +56,15 @@ const BlueText = styled.h1`
 `
 
 const GreyText = styled.span`
-    color: rgba(69, 69, 69, 0.9);  
+    color: rgba(69, 69, 69, 0.9);
+    text-transform: capitalize;
 `
 
 const BlueLine = styled.div`
     width: 50%;
     height: 1px;
-    background: rgb(46, 120, 181);
+    // background: rgb(46, 120, 181);
+    background: rgb(226, 226, 226);
     @media (max-width: 1000px) {
         display: none;
     }
@@ -68,7 +73,9 @@ const BlueLine = styled.div`
 const GreyLine = styled.div`
     width: 50%;
     height: 1px;
-    background: rgb(140, 140, 140);
+    // background: rgb(140, 140, 140);
+    background: rgb(226, 226, 226);
+    
     @media (max-width: 1000px) {
         display: none;
     }

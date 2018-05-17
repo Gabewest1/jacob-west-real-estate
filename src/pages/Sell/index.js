@@ -43,7 +43,7 @@ class Sell extends React.Component {
                 <SiteContainer>
                     <SectionHeaderNoMargin blueWord="Sellers" />
 
-                    <SectionSubHeader>This is text for the sub header</SectionSubHeader>
+                    {/* <SectionSubHeader>This is text for the sub header</SectionSubHeader> */}
 
                     <Body>
                         <Wrapper>
@@ -85,6 +85,11 @@ class Sell extends React.Component {
 }
 
 const FeaturedListingsContainer = styled.div``
+
+const FeaturedListingsHeader = styled.h3`
+    font-weight: 500;
+    margin-top: 0px;
+`
 
 const Featured = styled.div`
     position: relative;
@@ -164,6 +169,7 @@ const ListingStats = styled.div`
     display: flex;
     justify-content: space-between;
     width: 60%;
+
     span{
         font-weight: 600;
     }
@@ -173,7 +179,7 @@ const ListingStats = styled.div`
 `
 
 const MlsNumber = styled.p`
-    font-size: 11px;
+    font-size: 10px;
     border-top: #eee 1px solid;
     paddin-top: 6px;
 `
@@ -196,10 +202,12 @@ const Wrapper = styled.div``
 const Body = styled.div`
     display: flex;
     flex-direction: column;
-    
+    margin-top: 60px;
+
     h4{
         font-weight: 600;
         color: #2d3031;
+        margin-top: 0px;
     }
 
     @media (min-width: 768px) {
@@ -214,11 +222,6 @@ const Body = styled.div`
 
 const SellPageContactForm = styled(ContactForm)`
     margin-top: 22px;
-`
-
-
-const FeaturedListingsHeader = styled.h1`
-    font-weight: 200;
 `
 
 const SellView = styled.div`

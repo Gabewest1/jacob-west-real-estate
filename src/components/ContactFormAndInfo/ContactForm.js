@@ -40,12 +40,12 @@ const SubmitButton = styled.button`
     width: 100%;
     height: 45px;
     background: ${BLUE};
-    background: #247b7a;
+    background: #0ea789;
     border: none;
     color: white;
     font-size: 14px;
     letter-spacing: 0.05rem;
-    font-weight: 300;
+    font-weight: 400;
 `
 const Wrapper = styled.div`
     display: flex;

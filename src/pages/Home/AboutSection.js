@@ -66,7 +66,7 @@ const AboutView = styled.div`
     flex-direction: column;
     align-items: center;
     background: white;
-    padding-top: 130px;
+    padding-top: 80px;
     @media (max-width: 1000px) {
         padding-top: 45px;
     }
@@ -76,7 +76,7 @@ const AboutImgAndTextContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 15px;
     align-items: flex-end;
     
     @media (max-width: 1000px) {
