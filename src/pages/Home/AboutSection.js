@@ -8,9 +8,13 @@ class AboutSection extends React.Component {
         return (
             <AboutView>
                 <SiteContainer>
-                    <SectionHeader blueWord="About" greyWord="Us" noWrap={false} />
+                    <SectionHeader blueWord="About" greyWord="Us" noWrap />
 
                     <AboutImgAndTextContainer>
+                        <ClientImgWrapper>
+                            <ClientImg src="/assets/jacob2.jpg" />
+                        </ClientImgWrapper>
+
                         <AboutTextContainer>
                             <h3>Jacob West</h3>
 
@@ -26,7 +30,7 @@ class AboutSection extends React.Component {
                                 into electronic typesetting, remaining essentially unchanged.
                             </p>
 
-                            <h3 style={{ marginTop: "32px" }}>Remax Elite®</h3>
+                            <h3 style={{ marginTop: "42px" }}>Remax Elite®</h3>
 
                             <p>
                                 Lorem Ipsum has been the industry&#39;s standard dummy text ever
@@ -35,9 +39,6 @@ class AboutSection extends React.Component {
                             </p>
 
                         </AboutTextContainer>
-                        <ClientImgWrapper>
-                            <ClientImg src="/assets/jacob2.jpg" />
-                        </ClientImgWrapper>
                     </AboutImgAndTextContainer>
 
                     <SocialMediaLinksContainer>
@@ -75,7 +76,9 @@ const AboutImgAndTextContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;    
+    margin-top: 40px;
+    align-items: flex-end;
+    
     @media (max-width: 1000px) {
         flex-direction: column-reverse;
         align-items: center;
@@ -83,7 +86,8 @@ const AboutImgAndTextContainer = styled.div`
 `
 
 const ClientImgWrapper = styled.div`
-    width: 284px;
+    width: 300px;
+    margin-top: 20px;
     @media (max-width: 1000px) {
         width: 70%;
         margin-top: -32px;
@@ -99,11 +103,16 @@ const ClientImg = styled.img`
 `
 
 const AboutTextContainer = styled.div`
-    width: 100%;
+    width: 66%;
+    margin-right: 15px;
+
+    h3 {
+        margin-top: 0;
+    }
+
     @media (max-width: 1000px) {
         border-radius: 50%;
         width: 100%;
-        // text-align: justify;
         margin-top: 10px;
     }
 `

@@ -7,7 +7,7 @@ import SiteContainer from "../../components/SiteContainer/"
 class HeroSection extends React.Component {
     render() {
         return (
-            <HeroView>
+            <HeroView id="hero">
                 <SiteContainer>
                     <HeroHeader>
                         The search for your new <BoldenWord>home </BoldenWord>starts here.
@@ -42,6 +42,8 @@ const HeroHeader = styled.div`
     color: rgb(250, 250, 250);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     font-family: 'Raleway', sans-serif;
+    font-family: 'Segoe UI';
+    
     font-weight: 300;
     letter-spacing: -0.1rem;
     position: relative;
@@ -55,7 +57,7 @@ const HeroHeader = styled.div`
 `
 
 const BoldenWord = styled.span`
-    font-weight: 500;
+    font-weight: 400;
     color: rgb(251, 251, 251);
 `
 

@@ -11,7 +11,7 @@ class ContactForm extends React.Component {
                     <Input name="number" placeholder="Number" />
                 </Wrapper>
                 <TextArea name="message" placeholder="Message" />
-                <SubmitButton>CONTACT</SubmitButton>
+                <SubmitButton>Contact</SubmitButton>
             </ContactFormView>
         )
     }
@@ -22,23 +22,30 @@ const Input = styled.input`
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background: #c3c3c3;
+    background: #f6f6f6;
+    border: #ddd 1px solid;
 `
+
 const TextArea = styled.textarea`
     width: 100%;
     padding: 10px;
     height: 130px;
     margin: 0;
     box-sizing: border-box;
-    background: #c3c3c3;
+    background: #f6f6f6;
+    border: #ddd 1px solid;
     resize: none;
 `
 const SubmitButton = styled.button`
     width: 100%;
+    height: 45px;
     background: ${BLUE};
+    background: #247b7a;
     border: none;
     color: white;
-    line-height: 34px;
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
 `
 const Wrapper = styled.div`
     display: flex;
@@ -71,13 +78,14 @@ const ContactFormView = styled.form`
     flex-direction: column;
 
     * {
-        border: none;    
+        // border: none;    
         border-radius: 2px;
-        margin-bottom: 5px;    
+        margin-bottom: 5px;
     }
 
-    > *:last-child { 
-        margin-bottom: 0; 
+    > *:last-child {
+        margin-top: 1px;
+        margin-bottom: 0;
     }
 `
 

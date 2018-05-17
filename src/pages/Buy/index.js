@@ -6,6 +6,8 @@ import SectionSubHeader from "../../components/SectionSubHeader"
 import ContactForm from "../../components/ContactFormAndInfo/ContactForm"
 import SiteContainer from "../../components/SiteContainer"
 
+import { PAGE_PADDING } from "../../constants"
+
 class Buy extends React.Component {
     render() {
         return (
@@ -18,27 +20,28 @@ class Buy extends React.Component {
                     <Body>
                         <Wrapper>
                             <BuyingProcess>
-                                <Header>How Jacob makes the proccess a breeze</Header>
-                                <Description>
+                                <h4>How Jacob makes the proccess a breeze</h4>
+                                <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Quia voluptatibus tempora recusandae officiis.
                                     Molestias alias ut magni natus amet similique quam quibusdam,
                                     iure veniam vel, at quia blanditiis! Pariatur,
                                     eligendi.
-                                </Description>
+                                </p>
                             </BuyingProcess>
-                            <Image src="/assets/jacob2.jpg" alt="Jacob West Realtor" />
+                            <GettingStarted>
+                                <h4>How to get started</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Quia voluptatibus tempora recusandae officiis.
+                                    Molestias alias ut magni natus amet similique quam quibusdam.
+                                </p>
+                            </GettingStarted>
+                            <ContactForm />
                         </Wrapper>
-                        <GettingStarted>
-                            <Header>How to get started</Header>
-                            <Description>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quia voluptatibus tempora recusandae officiis.
-                                Molestias alias ut magni natus amet similique quam quibusdam.
-                            </Description>
-                        </GettingStarted>
-
-                        <ContactForm />
+                        <div>
+                            This is where the MOTTO MORTAGE should go
+                        </div>
                     </Body>
                 </SiteContainer>
             </BuyView>
@@ -53,13 +56,6 @@ const SectionHeaderNoMargin = styled(SectionHeader)`
         margin: 0;
     }
 `
-const Header = styled.h3``
-const Description = styled.p``
-const Image = styled.img`
-    max-height: 225px;
-    max-width: 225px;
-    margin: 0 auto;
-`
 const GettingStarted = styled.div``
 const BuyingProcess = styled.div`
 
@@ -67,18 +63,27 @@ const BuyingProcess = styled.div`
         margin-right: 25px;
     }
 `
-const Wrapper = styled.div`
+const Wrapper = styled.div``
+const Body = styled.div`
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+
+    h4{
+        font-weight: 600;
+        color: #202629;
+    }
 
     @media (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
+
+        > * {
+            flex-basis: 50%;
+        }
     }
 `
-const Body = styled.div``
 const BuyView = styled.div`
-    padding: 60px 0;
+    ${PAGE_PADDING};
     background: white;
 `
 
