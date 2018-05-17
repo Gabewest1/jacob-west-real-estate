@@ -6,6 +6,8 @@ const listingData = [
         bedrooms: 4,
         bathrooms: 4,
         sqft: 1670,
+        price: "$198,000",
+        mls: 7313138,
     },
     {
         img: "/assets/georgetown.png",
@@ -14,6 +16,8 @@ const listingData = [
         bedrooms: 4,
         bathrooms: 4,
         sqft: 1670,
+        price: "$256,000",
+        mls: 7313138,
     },
     {
         img: "/assets/pflug.png",
@@ -22,6 +26,8 @@ const listingData = [
         bedrooms: 4,
         bathrooms: 4,
         sqft: 1670,
+        price: "$155,000",
+        mls: 7313138,
     },
     {
         img: "/assets/pflug.png",
@@ -30,6 +36,8 @@ const listingData = [
         bedrooms: 4,
         bathrooms: 4,
         sqft: 1670,
+        price: "$256,000",
+        mls: 7313138,
     },
     {
         img: "/assets/pflug.png",
@@ -38,6 +46,8 @@ const listingData = [
         bedrooms: 4,
         bathrooms: 4,
         sqft: 1670,
+        price: "$206,000",
+        mls: 7313138,
     },
     {
         img: "/assets/pflug.png",
@@ -46,6 +56,8 @@ const listingData = [
         bedrooms: 4,
         bathrooms: 4,
         sqft: 1670,
+        price: "$345,000",
+        mls: 7313138,
     },
 ]
 
