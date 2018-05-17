@@ -20,7 +20,7 @@ class Sell extends React.Component {
                     <Body>
                         <Wrapper>
                             <WhatsMyHomeWorth>
-                                <h3>How Jacob makes the proccess a breeze</h3>
+                                <h4>How Jacob makes the proccess a breeze</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Quia voluptatibus tempora recusandae officiis.
@@ -30,14 +30,14 @@ class Sell extends React.Component {
                                 </p>
                             </WhatsMyHomeWorth>
                             <GettingStarted>
-                                <h3>How to get started</h3>
+                                <h4>How to get started</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Quia voluptatibus tempora recusandae officiis.
                                     Molestias alias ut magni natus amet similique quam quibusdam.
                                 </p>
                             </GettingStarted>
-                            <ContactForm />
+                            <SellPageContactForm />
                         </Wrapper>
                         <div>
                             This is where the current listings should go
@@ -67,6 +67,11 @@ const Wrapper = styled.div``
 const Body = styled.div`
     display: flex;
     flex-direction: column;
+    
+    h4{
+        font-weight: 600;
+        color: #202629;
+    }
 
     @media (min-width: 768px) {
         flex-direction: row;
@@ -80,6 +85,10 @@ const Body = styled.div`
 const SellView = styled.div`
     ${PAGE_PADDING}
     background: white;
+`
+
+const SellPageContactForm = styled(ContactForm)`
+    margin-top: 22px;
 `
 
 export default Sell

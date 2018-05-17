@@ -46,7 +46,6 @@ const SubmitButton = styled.button`
     font-size: 14px;
     letter-spacing: 0.05rem;
     font-weight: 300;
-    font-feature-settings: "c2sc" 1;
 `
 const Wrapper = styled.div`
     display: flex;

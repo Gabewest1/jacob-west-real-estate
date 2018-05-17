@@ -20,7 +20,7 @@ class Buy extends React.Component {
                     <Body>
                         <Wrapper>
                             <BuyingProcess>
-                                <h3>How Jacob makes the proccess a breeze</h3>
+                                <h4>How Jacob makes the proccess a breeze</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Quia voluptatibus tempora recusandae officiis.
@@ -30,7 +30,7 @@ class Buy extends React.Component {
                                 </p>
                             </BuyingProcess>
                             <GettingStarted>
-                                <h3>How to get started</h3>
+                                <h4>How to get started</h4>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Quia voluptatibus tempora recusandae officiis.
@@ -67,6 +67,11 @@ const Wrapper = styled.div``
 const Body = styled.div`
     display: flex;
     flex-direction: column;
+
+    h4{
+        font-weight: 600;
+        color: #202629;
+    }
 
     @media (min-width: 768px) {
         flex-direction: row;
