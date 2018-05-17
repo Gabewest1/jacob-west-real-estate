@@ -77,6 +77,7 @@ const AboutImgAndTextContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    align-items: flex-end;
     
     @media (max-width: 1000px) {
         flex-direction: column-reverse;
@@ -102,7 +103,7 @@ const ClientImg = styled.img`
 `
 
 const AboutTextContainer = styled.div`
-    width: 80%;
+    width: 66%;
     margin-right: 15px;
 
     h3 {

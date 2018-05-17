@@ -155,31 +155,31 @@ const Icons = styled.div`
         font-weight: normal;
         text-decoration: inherit;
         font-size: 3.9em;
-        color: #e4e4e4;
-        background: #009688;
+        color: #009688;
+        background: #ffffff;
         border-radius: 50%;
-        border: #008c7f 3px solid;
+        border: #049487 2px solid;
     }
 `
 
 const WhyUsIcon = styled(Icons)`
     ::before{
-        content: "\\f0c0";
-        font-size: 3.45em;
-        padding: .178em;
+        content: "\f0c0";
+        font-size: 2.9em;
+        padding: 0.308em;
     }
 `
 
 const BuyIcon = styled(Icons)`
     ::before{
-        content: "\\f084";
+        content: "\f084";
         padding: .12em .14em;
     }
 `
 
 const SellIcon = styled(Icons)`
     ::before{
-        content: "\\f015";
+        content: "\f015";
         padding: .12em .15em;
     }
 `

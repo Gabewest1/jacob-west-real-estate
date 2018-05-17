@@ -171,15 +171,16 @@ const Input = styled.input`
     border: #c4c4c4 1px solid;
     color: rgb(67, 67, 67);
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
     border-radius: 0px;
+    font-family: 'Segoe UI';
+    
     background-clip: padding-box;
     
     &::-webkit-input-placeholder { 
         color: rgb(150, 150, 150);
         font-size: 15px;
         font-weight: 300;   
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Segoe UI';
 
         @media (max-width: 1000px) {
             font-size: 11px;
@@ -200,8 +201,8 @@ const MlsFilterOptions = styled.div`
     box-sizing: border-box;
     font-size: 13px;
     letter-spacing: 0.035rem;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-family: 'Segoe UI';
     outline: none;
     
     span {
@@ -235,7 +236,8 @@ const MlsSubmitButton = styled.button`
     letter-spacing: 0.045rem;
     font-weight: 400;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI';
+    
     @media (max-width: 1000px) {
         width: 100%;
         letter-spacing: 0.025rem;
