@@ -22,7 +22,7 @@ class Sell extends React.Component {
 
                 <ListingInfo>
                     <h4>{ featuredListing.address1 || "Address Not Available" }</h4>
-                    <p style={{ marginTop: -5, fontSize: 13 }}>{ featuredListing.address2 }</p>
+                    <p style={{ marginTop: -6, fontSize: 13 }}>{ featuredListing.address2 }</p>
                     <h2>{ featuredListing.price || "Price Not Available" }</h2>
 
                     <ListingStats>
@@ -145,7 +145,7 @@ const FeaturedListing = styled.div`
 `
 
 const ListingImage = styled.div`
-    width: 200px;
+    width: 50%;
     height: 160px;
     position: relative;
     bottom: 20px;
@@ -160,7 +160,7 @@ const ListingImage = styled.div`
 
 const ListingInfo = styled.div`
     border: #eee 1px solid;
-    padding: 1em;
+    padding: 1.12em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -176,6 +176,7 @@ const ListingInfo = styled.div`
         margin-top: 10px;
         color: #01a97a !important;
         line-height: 1em;
+        
     }
 `
 
@@ -193,9 +194,11 @@ const ListingStats = styled.div`
 `
 
 const MlsNumber = styled.p`
-    font-size: 10px;
+    font-size: 11px;
     width: 90%;
+    margin-top: -3px;
     border-top: #eee 1px solid;
+    padding-top: 2px;
 `
 
 const SectionHeaderNoMargin = styled(SectionHeader)`
