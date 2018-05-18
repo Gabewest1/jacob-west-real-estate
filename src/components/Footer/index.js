@@ -29,6 +29,7 @@ const FooterView = styled.div`
     width: 100%;
     height: 170px;
     background: rgb(25,25,25);
+    background: black;
     display: flex;
     justify-content: center;
     @media (max-width: 1000px) {
@@ -53,6 +54,9 @@ const FooterPageLinks = styled(PageLinks)`
     color: #b1b1b1;
     width: 50%;
     text-transform: uppercase;
+    a{
+        font-size: 11px;
+    }
     @media (max-width: 1000px) {
         display: none;
     }

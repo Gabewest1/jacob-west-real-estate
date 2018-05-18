@@ -21,18 +21,18 @@ class Sell extends React.Component {
                 </ListingImage>
 
                 <ListingInfo>
-                    <h4>{ featuredListing.address1 }</h4>
-                    <p style={{ marginTop: -2, fontSize: 14 }}>{ featuredListing.address2 }</p>
-                    <h2>{ featuredListing.price }</h2>
+                    <h4>{ featuredListing.address1 || "Address Not Available" }</h4>
+                    <p style={{ marginTop: -5, fontSize: 13 }}>{ featuredListing.address2 }</p>
+                    <h2>{ featuredListing.price || "Price Not Available" }</h2>
 
                     <ListingStats>
-                        <p><span>{ featuredListing.bedrooms }</span> BR</p>
-                        <p><span>{ featuredListing.bathrooms }</span> BA</p>
-                        <p><span>{ featuredListing.sqft }</span> SQFT</p>
+                        <p><span>{ featuredListing.bedrooms || "?" }</span> BR</p>
+                        <p><span>{ featuredListing.bathrooms || "?" }</span> BA</p>
+                        <p><span>{ featuredListing.sqft || "?" }</span> SQFT</p>
                     </ListingStats>
 
                     <MlsNumber>
-                        MLS# { featuredListing.mls }
+                        MLS# { featuredListing.mls || "Not Available" }
                     </MlsNumber>
                 </ListingInfo>
             </FeaturedListing>
@@ -174,6 +174,7 @@ const ListingInfo = styled.div`
     h2{
         margin-top: 10px;
         color: #01a97a !important;
+        line-height: 1em;
     }
 `
 
