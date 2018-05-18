@@ -122,11 +122,19 @@ const FeaturedListingsList = styled.div`
     > :nth-child(1){
         margin-top: 0px;
     }
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #eaeaea;
+        border-radius: 5px;
+        position: relative;
+    }
 `
 
 const FeaturedListing = styled.div`
     box-sizing: border-box;
-    width: 100%;
+    width: 98%;
     display: flex;
     height: 160px;
     justify-content: space-between;
