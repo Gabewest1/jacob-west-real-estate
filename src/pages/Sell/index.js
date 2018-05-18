@@ -134,7 +134,7 @@ const FeaturedListingsList = styled.div`
 
 const FeaturedListing = styled.div`
     box-sizing: border-box;
-    width: 98%;
+    width: 98.5%;
     display: flex;
     height: 160px;
     justify-content: space-between;
