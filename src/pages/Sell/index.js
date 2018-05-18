@@ -194,7 +194,6 @@ const ListingStats = styled.div`
 const MlsNumber = styled.p`
     font-size: 10px;
     border-top: #eee 1px solid;
-    paddin-top: 6px;
 `
 
 const SectionHeaderNoMargin = styled(SectionHeader)`
