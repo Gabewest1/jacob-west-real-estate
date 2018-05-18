@@ -46,7 +46,7 @@ const NavbarView = styled.div`
     }
 `
 const NavbarContainer = styled.div`
-    width: 74%;
+    width: 76%;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -40,7 +40,7 @@ const BlueText = styled.h1`
     font-weight: 300;
     font-size: 40px;
     // letter-spacing: 0.3rem;
-    letter-spacing: 0.16rem;
+    letter-spacing: 0.07rem;
     // text-transform: uppercase;  
     text-align: center;
     color: #003e75;
