@@ -100,7 +100,7 @@ const Featured = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 3px;
     width: 80px;
     height: 20px;
     color: white;
@@ -126,7 +126,8 @@ const FeaturedListingsList = styled.div`
         width: 12px;
     }
     ::-webkit-scrollbar-thumb {
-        background: #eaeaea;
+        background: #f6f6f6;
+        border: #ddd 1px solid;
         border-radius: 5px;
         position: relative;
     }
