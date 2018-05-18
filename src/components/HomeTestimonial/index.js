@@ -64,6 +64,7 @@ const TestimonialText = styled.p`
 
 const TestimonialName = styled.h4`
     letter-spacing: 0.02rem;
-    color: #303030;
+    color: #343434;
     margin-top: 10px;
+    border-top: #eee 1px solid;
 `

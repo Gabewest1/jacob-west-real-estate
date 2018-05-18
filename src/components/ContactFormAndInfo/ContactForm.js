@@ -40,7 +40,7 @@ const SubmitButton = styled.button`
     width: 100%;
     height: 45px;
     background: ${BLUE};
-    background: #0ea789;
+    background: #1eb978;
     border: none;
     color: white;
     font-size: 14px;

@@ -112,7 +112,7 @@ const Featured = styled.div`
 `
 
 const FeaturedListingsList = styled.div`
-    max-height: 490px;
+    max-height: 495px;
     width: 100%;
     overflow: scroll;
     margin-top: 25px;
@@ -193,6 +193,7 @@ const ListingStats = styled.div`
 
 const MlsNumber = styled.p`
     font-size: 10px;
+    width: 90%;
     border-top: #eee 1px solid;
 `
 
@@ -227,7 +228,7 @@ const Body = styled.div`
         justify-content: space-between;
 
         > * {
-            flex-basis: 47%;
+            flex-basis: 46%;
         }
     }
 `
