@@ -173,7 +173,8 @@ const WhyUsIcon = styled(Icons)`
 const BuyIcon = styled(Icons)`
     ::before{
         content: "\f084";
-        padding: .12em .14em;
+        font-size: 3.55em;
+        padding: .17em .17em;
     }
 `
 
@@ -185,17 +186,16 @@ const SellIcon = styled(Icons)`
 `
 
 const LearnMoreButton = styled(Link)`
-    box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     color: #5181d4;
     font-weight: 500;
     letter-spacing: 0.04rem;
-    font-size: 14px;
+    font-size: 10px;
     text-transform: uppercase;
-    font-feature-settings: "c2sc" 1;
+    // font-feature-settings: "c2sc" 1;
     border: #7386ff 1px solid;
-    width: 117px;
-    height: 29px;
+    width: 95px;
+    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;

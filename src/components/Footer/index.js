@@ -27,8 +27,9 @@ const Footer = props => (
 
 const FooterView = styled.div`
     width: 100%;
-    height: 190px;
-    background: #1e2021;
+    height: 170px;
+    background: rgb(25,25,25);
+    background: black;
     display: flex;
     justify-content: center;
     @media (max-width: 1000px) {
@@ -41,7 +42,7 @@ const FooterContainer = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 52px;
+    margin-top: 48px;
     width: 80%;
     @media (max-width: 1000px) {
         margin-top: 27px;
@@ -53,6 +54,9 @@ const FooterPageLinks = styled(PageLinks)`
     color: #b1b1b1;
     width: 50%;
     text-transform: uppercase;
+    a{
+        font-size: 11px;
+    }
     @media (max-width: 1000px) {
         display: none;
     }
@@ -62,7 +66,7 @@ const Copyright = styled.div`
     font-size: 11px;
     color: rgba(101, 130, 167, 0.56);
     text-align: center;
-    margin-top: 8px;
+    margin-top: -20px;
 `
 
 const FooterLogosContainer = styled.div`

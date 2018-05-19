@@ -12,14 +12,15 @@ class Testimonials extends React.Component {
     render() {
         const testimonialsComponent = testimonialsData.map(testimonial => (
             <Testimonial>
+                <QuotationMarks>
+                    <img src="/assets/quotes.svg" alt="quotation-mark" />
+                </QuotationMarks>
+
                 <QuoteView>
-                    <div>
-                        <img src="/assets/quotes.svg" alt="quotation-mark" />
-                    </div>
                     <p>{ testimonial.quote }</p>
+
+                    <h4>{ testimonial.name }</h4>
                 </QuoteView>
-                <HorizontalBar />
-                <h3>{ testimonial.name }</h3>
             </Testimonial>
         ))
 
@@ -27,7 +28,7 @@ class Testimonials extends React.Component {
             <TestimonialsView {...this.props}>
                 <SiteContainer>
                     <SectionHeader blueWord="Testimonials" />
-                    <SectionSubHeader>Sub Header Yo man ayy lmao</SectionSubHeader>
+                    {/* <SectionSubHeader>Sub Header Yo man ayy lmao</SectionSubHeader> */}
 
                     <TestimonialsList>
                         { testimonialsComponent }
@@ -38,31 +39,49 @@ class Testimonials extends React.Component {
     }
 }
 
-const HorizontalBar = styled.div`
-    height: 7px;
-    width: 27px;
-    border-radius: 4px;
-    background-color: ${GREY};
-`
 const Testimonial = styled.li`
-    margin: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    h4{
+        margin: 0;
+        margin-top: 6px;
+        font-weight: 500;
+        border-top: #eee 1px solid;
+        width: 100%;
+        padding-top: .25em;
+    }
 `
 const TestimonialsList = styled.ul`
     padding: 0;
     margin: 0;
+    margin-top: 10px;
     list-style: none;
-`
-const QuoteView = styled.div`
-    display: flex;
+    
+    > * {
+        margin-top: 44px;
+    }
 
-    img {
-        width: 20px;
-        margin-right: 7px;
+    > :nth-child(1){
+        margin-top: 0px;
     }
 `
+const QuotationMarks = styled.div`
+    width: 30px;
+    margin-right: 7px;
+
+    img {
+        width: 100%;
+        position: relative;
+        top: 13px;
+    }
+`
+
+const QuoteView = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+`
+
 const TestimonialsView = styled.div`
     ${PAGE_PADDING}
     background: white;

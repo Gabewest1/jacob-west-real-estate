@@ -36,7 +36,7 @@ const NavbarView = styled.div`
     z-index: 10000;
     height 82px;
     width: 100%;
-    background-color: rgb(34, 38, 43);
+    background-color: rgb(25, 25, 25);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,7 +46,7 @@ const NavbarView = styled.div`
     }
 `
 const NavbarContainer = styled.div`
-    width: 74%;
+    width: 76%;
     display: flex;
     justify-content: space-between;
     align-items: center;
