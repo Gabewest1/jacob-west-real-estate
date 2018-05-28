@@ -23,7 +23,7 @@ const HeroView = styled.div`
     width: 1200px;
     width: 100%;
     height: 100vh;
-    background: url('/assets/hero1.png') no-repeat;
+    background: url('/assets/heroimagemain.jpg') no-repeat;
     background-size: 120%;
     background-position: 30% 68%;
     position: relative;

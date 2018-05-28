@@ -160,13 +160,12 @@ const ListingImage = styled.div`
 
 const ListingInfo = styled.div`
     border: #eee 1px solid;
-    padding: 1.12em;
+    padding: 1em;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-top-right-radius: 9px;
-    border-bottom-right-radius: 9px;
+    border-top-right-radius: 8px;
 
     * {
         margin: 0;

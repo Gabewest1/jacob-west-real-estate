@@ -39,9 +39,9 @@ class Buy extends React.Component {
                             </GettingStarted>
                             <ContactForm />
                         </Wrapper>
-                        <div>
+                        {/* <div>
                             This is where the MOTTO MORTAGE should go
-                        </div>
+                        </div> */}
                     </Body>
                 </SiteContainer>
             </BuyView>
