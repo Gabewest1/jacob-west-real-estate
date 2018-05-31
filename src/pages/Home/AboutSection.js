@@ -86,8 +86,9 @@ const AboutImgAndTextContainer = styled.div`
 `
 
 const ClientImgWrapper = styled.div`
-    width: 300px;
-    margin-top: 20px;
+    width: 290px;
+    position: relative;
+    bottom: 8px;
     @media (max-width: 1000px) {
         width: 70%;
         margin-top: -32px;

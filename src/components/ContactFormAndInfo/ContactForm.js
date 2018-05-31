@@ -6,10 +6,13 @@ class ContactForm extends React.Component {
     render() {
         return (
             <ContactFormView {...this.props}>
-                <Wrapper>
-                    <Input name="name" placeholder="Name" />
-                    <Input name="number" placeholder="Number" />
-                </Wrapper>
+                <label>Name</label>
+                <Input name="name" placeholder="Name" />
+                
+                <label>Phone Number</label>
+                <Input name="number" placeholder="Number" />
+                
+                <label>Message</label>
                 <TextArea name="message" placeholder="Message" />
                 <SubmitButton>Contact</SubmitButton>
             </ContactFormView>
@@ -37,45 +40,28 @@ const TextArea = styled.textarea`
     resize: none;
 `
 const SubmitButton = styled.button`
-    width: 100%;
-    height: 45px;
+    width: 140px;
+    height: 40px;
     background: ${BLUE};
     background: #1eb978;
     border: none;
     color: white;
     font-size: 14px;
     letter-spacing: 0.05rem;
-    font-weight: 400;
+    font-weight: 500;
 `
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
 
-    ${Input} {
-        margin-bottom: 5px;
-    
-        &:last-child {
-            margin-bottom: 0px;
-        }
-    }
-    
-    @media (min-width: 480px) {
-        ${Input} {
-            margin: 0;
-            margin-right: 5px;
-        
-            &:last-child {
-                margin-right: 0px;
-            }
-        }
-
-        justify-content: space-between;
-        flex-direction: row;
-    }
-`
 const ContactFormView = styled.form`
     display: flex;
     flex-direction: column;
+
+    label{
+        color: #6f6f6f;
+        font-size: 14px;
+        position: relative;
+        top: 4px;
+        left: 1px;
+    }
 
     * {
         // border: none;    
@@ -84,7 +70,7 @@ const ContactFormView = styled.form`
     }
 
     > *:last-child {
-        margin-top: 1px;
+        margin-top: 4px;
         margin-bottom: 0;
     }
 `

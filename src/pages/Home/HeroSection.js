@@ -25,7 +25,7 @@ const HeroView = styled.div`
     height: 100vh;
     background: url('/assets/heroimagemain.jpg') no-repeat;
     background-size: 120%;
-    background-position: 30% 68%;
+    background-position: 30% 60%;
     position: relative;
     display: flex;
     flex-direction: column;
