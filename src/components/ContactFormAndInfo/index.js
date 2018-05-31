@@ -52,11 +52,11 @@ class ContactSection extends React.Component {
 const SubHeader = styled.h3``
 const ContactMessage = styled.p``
 const ContactTitle = styled.h3`
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
 `
 const ContactInfo = styled.p`
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
 `
 const ContactWrapper = styled.div`
