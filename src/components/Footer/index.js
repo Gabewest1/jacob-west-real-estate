@@ -31,6 +31,7 @@ const FooterView = styled.div`
     background: rgb(25,25,25);
     background: black;
     display: flex;
+    align-items: center;
     justify-content: center;
     @media (max-width: 1000px) {
         height: 170px;
@@ -41,9 +42,8 @@ const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    margin-top: 48px;
     width: 80%;
+    height: 100px;
     @media (max-width: 1000px) {
         margin-top: 27px;
     }
@@ -66,7 +66,6 @@ const Copyright = styled.div`
     font-size: 11px;
     color: rgba(101, 130, 167, 0.56);
     text-align: center;
-    margin-top: -20px;
 `
 
 const FooterLogosContainer = styled.div`

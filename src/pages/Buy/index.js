@@ -37,7 +37,7 @@ class Buy extends React.Component {
                                     Molestias alias ut magni natus amet similique quam quibusdam.
                                 </p>
                             </GettingStarted>
-                            <ContactForm />
+                            <ContactForm style={{ width: "50%" }} />
                         </Wrapper>
                         {/* <div>
                             This is where the MOTTO MORTAGE should go
@@ -78,7 +78,7 @@ const Body = styled.div`
         justify-content: space-between;
 
         > * {
-            flex-basis: 50%;
+            flex-basis: 100%;
         }
     }
 `

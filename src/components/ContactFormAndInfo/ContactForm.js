@@ -59,14 +59,14 @@ const ContactFormView = styled.form`
         color: #6f6f6f;
         font-size: 14px;
         position: relative;
-        top: 4px;
-        left: 1px;
+        left: 7px;
+        top: 6px;
     }
 
     * {
         // border: none;    
         border-radius: 2px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
     > *:last-child {

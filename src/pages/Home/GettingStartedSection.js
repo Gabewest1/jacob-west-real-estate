@@ -155,10 +155,10 @@ const Icons = styled.div`
         font-weight: normal;
         text-decoration: inherit;
         font-size: 3.9em;
-        color: #009688;
+        color: #303d48;
         background: #ffffff;
         border-radius: 50%;
-        border: #049487 2px solid;
+        border: #303d48 2px solid;
     }
 `
 

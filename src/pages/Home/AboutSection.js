@@ -89,10 +89,15 @@ const ClientImgWrapper = styled.div`
     width: 290px;
     position: relative;
     bottom: 8px;
+    
     @media (max-width: 1000px) {
-        width: 70%;
-        margin-top: -32px;
+        margin-top: 32px;
         border-radius: 50%;
+        width: 40%;
+    }
+    
+    @media (max-width: 600px) {
+        width: 70%;
     }
 `
 
