@@ -112,7 +112,7 @@ const Featured = styled.div`
 `
 
 const FeaturedListingsList = styled.div`
-    max-height: 495px;
+    max-height: 569px;
     width: 100%;
     overflow: scroll;
     margin-top: 25px;
