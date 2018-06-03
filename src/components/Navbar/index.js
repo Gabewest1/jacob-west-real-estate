@@ -119,7 +119,7 @@ const NavbarContainer = styled.div`
     }
 `
 const LogoLinkToHome = styled(Link)`
-    width: 88px;
+    width: 91px;
     @media (max-width: 1000px) {
         margin-left: 10px;
     }
@@ -131,9 +131,9 @@ const PhoneNumberLinkToContact = styled(Link)`
     text-decoration: none;
     position: relative;
     top: 2px;
-    font-size: 29px;
+    font-size: 28px;
     letter-spacing: -0.08rem;
-    color: rgba(235, 235, 235, 0.96);
+    color: rgba(255, 255, 255, 0.7);
     @media (max-width: 1000px) {
         display: none;
     }
