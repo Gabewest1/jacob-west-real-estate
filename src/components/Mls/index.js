@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import "font-awesome/css/font-awesome.min.css"
 
 import Baths from "./Baths"
 import Beds from "./Beds"
@@ -201,7 +202,6 @@ const MlsFilterOptions = styled.div`
     font-size: 13px;
     letter-spacing: 0.035rem;
     font-weight: 500;
-    // font-family: 'Segoe UI';
     outline: none;
     
     span {
@@ -212,6 +212,17 @@ const MlsFilterOptions = styled.div`
         width: 100%;
         position: relative;
         z-index: 1;
+        &::after{
+            font-family: FontAwesome;
+            font-size: 20px;
+            content: "\f0d7";
+            position: relative;
+            left: 52px;
+            top: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     @media (max-width: 1000px) {
@@ -230,7 +241,8 @@ const MlsSubmitButton = styled.button`
     width: 40%;
     height: 47px;
     color: rgb(255, 255, 255);
-    background-color: #28a745;
+    background: #28a745;
+    background: #23a962;
     border: #28803b 1px solid;
     font-weight: 500;
     font-size: 16px;

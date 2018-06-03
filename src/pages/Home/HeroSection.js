@@ -42,7 +42,7 @@ const HeroView = styled.div`
 const HeroOverlay = styled.div`
     width: 100%;
     height: 100vh;
-    background: #0d0e1587;
+    background: #0d0e157f;
     position: absolute;
 `
 
