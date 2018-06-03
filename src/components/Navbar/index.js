@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "react-router-dom"
-import PageLinks from "../../components/PageLinks"
 
 class Navbar extends React.Component {
     state = {
@@ -18,7 +17,43 @@ class Navbar extends React.Component {
                         <Logo src="/assets/logo.svg" />
                     </LogoLinkToHome>
 
-                    <PageLinks isExpanded={this.state.isExpanded} />
+                    <NavLinksContainer>
+                        <NavLinkWrapper>
+                            <NavLink to="#">
+                                Property Search
+                            </NavLink>
+                        </NavLinkWrapper>
+                        
+                        <NavLinkWrapper>
+                            <NavLink to="#">
+                                Buyers
+                            </NavLink>
+                        </NavLinkWrapper>
+
+                        <NavLinkWrapper>
+                            <NavLink to="#">
+                                Sellers
+                            </NavLink>
+                        </NavLinkWrapper>
+
+                        <NavLinkWrapper>
+                            <NavLink to="#">
+                                About Us
+                            </NavLink>
+                        </NavLinkWrapper>
+
+                        <NavLinkWrapper>
+                            <NavLink to="#">
+                                Testimonials
+                            </NavLink>
+                        </NavLinkWrapper>
+
+                        <NavLinkWrapper>
+                            <NavLink to="#">
+                                Contact
+                            </NavLink>
+                        </NavLinkWrapper>
+                    </NavLinksContainer>
 
                     <PhoneNumberLinkToContact to="contact">512 669 9649</PhoneNumberLinkToContact>
                 </NavbarContainer>
@@ -30,13 +65,41 @@ class Navbar extends React.Component {
     }
 }
 
+const NavLinksContainer = styled.div`
+    justify-content: space-between;
+    display: flex;
+    width: 60%;
+    height: 73px;
+`
+const NavLinkWrapper = styled.div`
+    width: 100%;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        background: rgba(255,255,255,.03);
+    }
+`
+const NavLink = styled(Link)`
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 13px;
+    padding: 1em;
+    box-sizing: border-box;
+    color: rgba(255,255,255,.5);
+`
+
 const NavbarView = styled.div`
     position: fixed;
     top: 0;
     z-index: 10000;
-    height 82px;
+    height 73px;
     width: 100%;
-    background-color: rgb(25, 25, 25);
+    background-color: #343a40;
+    border-bottom: #3e4750 3px solid;    
     display: flex;
     flex-direction: column;
     justify-content: center;

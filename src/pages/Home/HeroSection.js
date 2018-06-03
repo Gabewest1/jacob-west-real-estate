@@ -8,7 +8,8 @@ class HeroSection extends React.Component {
     render() {
         return (
             <HeroView id="hero">
-                <SiteContainer>
+            ‏<HeroOverlay />
+                <SiteContainer style={{ position: "relative", bottom: "13px" }}>
                     <HeroHeader>
                         The search for your new <BoldenWord>home </BoldenWord>starts here.
                     </HeroHeader>
@@ -24,8 +25,8 @@ const HeroView = styled.div`
     width: 100%;
     height: 100vh;
     background: url('/assets/heroimagemain.jpg') no-repeat;
-    background-size: 120%;
-    background-position: 30% 60%;
+    background-size: 149%;
+    background-position: 0% 55%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,12 +38,20 @@ const HeroView = styled.div`
         background-position: 34% 78%;
     }
 `
+
+const HeroOverlay = styled.div`
+    width: 100%;
+    height: 100vh;
+    background: #0d0e1587;
+    position: absolute;
+`
+
 const HeroHeader = styled.div`
     font-size: 50px;
     color: rgb(250, 250, 250);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Segoe UI';
+    // font-family: 'Raleway', sans-serif;
+    // font-family: 'Segoe UI';
     
     font-weight: 300;
     letter-spacing: -0.1rem;

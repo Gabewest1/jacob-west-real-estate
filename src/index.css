@@ -7,7 +7,6 @@ body {
 
 h1, h3 {
   color: #525252;
-  font-family: 'Segoe UI'; 
   color: #22262b;
   color: #383e44;
 }
@@ -18,9 +17,12 @@ p {
     color: #8a8a8a;
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Segoe UI';
 }
 
-body, input, textarea, button, a, p, h1, h3, h4 {
-  font-family: 'Segoe UI';
+* {
+  font-family: 'Segoe UI' !important;
+  /* font-family: 'Raleway', sans-serif !important; */
+  /* font-family: 'Roboto', sans-serif !important; */
+  /* font-family: 'Ubuntu', sans-serif !important; */
+  /* font-family: 'Lato', sans-serif !important; */
 }

@@ -1,11 +1,9 @@
 import React from "react"
 import styled from "styled-components"
-import PageLinks from "../../components/PageLinks"
 
 const Footer = props => (
     <FooterView {...props}>
         <FooterContainer>
-            <FooterPageLinks />
 
             <Copyright>
                 Each Office Independently Owned and Operated.
@@ -46,19 +44,6 @@ const FooterContainer = styled.div`
     height: 100px;
     @media (max-width: 1000px) {
         margin-top: 27px;
-    }
-`
-
-const FooterPageLinks = styled(PageLinks)`
-    letter-spacing: 0.01rem;
-    color: #b1b1b1;
-    width: 50%;
-    text-transform: uppercase;
-    a{
-        font-size: 11px;
-    }
-    @media (max-width: 1000px) {
-        display: none;
     }
 `
 

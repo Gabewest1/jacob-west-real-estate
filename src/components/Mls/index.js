@@ -138,10 +138,9 @@ const EditBox = styled.div`
 const MlsContainer = styled.div`
     width: 100%;
     box-sizing: border-box;
-    padding: 3px;
-    background: rgb(246, 246, 246);
-    border: black 1px solid;
-    border: #c4c4c4 1px solid;
+    padding: 1px;
+    background: none;
+    border: #c4c4c469 1px solid;
     
     @media (max-width: 1000px) {
         padding: 1px;
@@ -172,7 +171,7 @@ const Input = styled.input`
     color: rgb(67, 67, 67);
     font-size: 14px;
     border-radius: 0px;
-    font-family: 'Segoe UI';
+    // font-family: 'Segoe UI';
     
     background-clip: padding-box;
     
@@ -180,7 +179,7 @@ const Input = styled.input`
         color: rgb(150, 150, 150);
         font-size: 15px;
         font-weight: 300;   
-        font-family: 'Segoe UI';
+        // font-family: 'Segoe UI';
 
         @media (max-width: 1000px) {
             font-size: 11px;
@@ -202,7 +201,7 @@ const MlsFilterOptions = styled.div`
     font-size: 13px;
     letter-spacing: 0.035rem;
     font-weight: 500;
-    font-family: 'Segoe UI';
+    // font-family: 'Segoe UI';
     outline: none;
     
     span {
@@ -228,15 +227,14 @@ const MlsSubmitButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 40%;
     height: 47px;
     color: rgb(255, 255, 255);
-    background-color:   #ea343e; 
-    border: #d44552 1px solid;
-    letter-spacing: 0.045rem;
-    font-weight: 400;
+    background-color: #28a745;
+    border: #28803b 1px solid;
+    font-weight: 500;
     font-size: 16px;
-    font-family: 'Segoe UI';
+    // font-family: 'Segoe UI';
     
     @media (max-width: 1000px) {
         width: 100%;

@@ -9,7 +9,7 @@ class AboutSection extends React.Component {
             <AboutView>
                 <SiteContainer>
                     <SectionHeader blueWord="About" greyWord="Us" noWrap />
-
+                    
                     <AboutImgAndTextContainer>
                         <ClientImgWrapper>
                             <ClientImg src="/assets/jacob2.jpg" />
