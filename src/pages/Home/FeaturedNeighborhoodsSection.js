@@ -13,7 +13,7 @@ class FeaturedNeighborhoodsSection extends React.Component {
                     <p>
                         These should scroll sideways instead of stacking on mobile
                     </p>
-
+                 
                     <HoodsContainer>
                         <TopRowContainer>
                             <HoodWrapper>

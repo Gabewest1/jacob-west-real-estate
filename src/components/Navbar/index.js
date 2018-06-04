@@ -17,39 +17,40 @@ class Navbar extends React.Component {
                         <Logo src="/assets/logo.svg" />
                     </LogoLinkToHome>
 
-                    <NavLinksContainer>
+                    <NavLinksContainer isExpanded={ isExpanded }>
+                        
                         <NavLinkWrapper>
-                            <NavLink to="#">
+                            <NavLink to="/PropertySearch">
                                 Property Search
                             </NavLink>
                         </NavLinkWrapper>
                         
                         <NavLinkWrapper>
-                            <NavLink to="#">
+                            <NavLink to="/Buy">
                                 Buyers
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="#">
+                            <NavLink to="/Sell">
                                 Sellers
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="#">
+                            <NavLink to="/About">
                                 About Us
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="#">
+                            <NavLink to="/Testimonials">
                                 Testimonials
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="#">
+                            <NavLink to="/Contact">
                                 Contact
                             </NavLink>
                         </NavLinkWrapper>
@@ -72,9 +73,17 @@ const NavLinksContainer = styled.div`
     height: 73px;
     position: relative;
     top: 2px;
+    transition: all .3s ease-in;    
 
-    @media (max-width: 1000px) {
-        display: none;
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        background: #343a40;
+        height: ${({ isExpanded }) => isExpanded ? "405px" : "0px" };
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        width: 100%;
+        top: 59px;
     }
 `
 const NavLinkWrapper = styled.div`
@@ -84,9 +93,17 @@ const NavLinkWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     &:hover{
         background: rgba(255,255,255,.03);
+    }
+    
+    @media (max-width: 1100px) {
+        border-top: #394149 1px solid;
+    
+        &:nth-child(1){
+            border-top: none;
+        }
     }
 `
 const NavLink = styled(Link)`
@@ -110,7 +127,8 @@ const NavbarView = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media (max-width: 1000px) {
+
+    @media (max-width: 1100px) {
         height: 55px;
     }
 `
@@ -120,13 +138,14 @@ const NavbarContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    @media (max-width: 1000px) {
+
+    @media (max-width: 1100px) {
         width: 100%;
     }
 `
 const LogoLinkToHome = styled(Link)`
     width: 91px;
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
         margin-left: 10px;
     }
 `
@@ -140,7 +159,7 @@ const PhoneNumberLinkToContact = styled(Link)`
     font-size: 32px;
     letter-spacing: -0.08rem;
     color: rgba(255, 255, 255, 0.75);
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
         display: none;
     }
 `
@@ -155,10 +174,10 @@ const NavMenuExpander = styled.button`
     background: none;
     border: none;
     z-index: 220000000;
-    @media (max-width: 1000px) {
+    @media (max-width: 1100px) {
         margin-right: 10px;
     }
-    @media (min-width: 1001px) {
+    @media (min-width: 1101px) {
         display: none;
     }
 `

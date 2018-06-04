@@ -161,7 +161,7 @@ const MlsForm = styled.form`
 `
 
 const Input = styled.input`
-    min-width: ${SEARCH_BAR_WIDTH}px;
+    // min-width: ${SEARCH_BAR_WIDTH}px;
     width: 100%;
     height: 47px;
     box-sizing: border-box;
@@ -194,7 +194,7 @@ const Input = styled.input`
 
 const MlsFilterOptions = styled.div`
     width: 300px;
-    background: ${({ isActive }) => isActive ? "lightgray" : "linear-gradient(#f1f1f1, #c1c1c1)"};
+    background: ${({ isActive }) => isActive ? "lightgray" : "#dbdbdb"};
     color: rgba(113, 113, 113, 0.832);
     border: rgba(170, 170, 170, 0.6) 1px solid; 
     border-left: none;   

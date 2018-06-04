@@ -41,7 +41,7 @@ const HeroContainer = styled.div`
     width: 76%;
 
     @media (max-width: 1000px) {
-        width: 50%;
+        width: 80%;
     }
 `
 

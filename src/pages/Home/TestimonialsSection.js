@@ -38,7 +38,8 @@ const TestimonialsView = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 120px;
+    padding-top: 100px;
+    
     h3{
         color: #2b2b2b;
     }
