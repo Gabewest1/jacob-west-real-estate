@@ -20,7 +20,6 @@ class ContactSection extends React.Component {
 
 const ContactSectionView = styled.div`
     width: 100%;
-    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;

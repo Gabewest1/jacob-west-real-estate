@@ -98,14 +98,13 @@ const Body = styled.div`
     flex-direction: column-reverse;
     justify-content: space-between;
     padding-bottom: 100px;
-    margin-top: 40px;
+    margin-top: 11px;
     @media (min-width: 768px) {
         flex-direction: row;
     }
 `
 
 const ContactFormAndInfoView = styled.div`
-    background: white;
     width: 100%;
 `
 

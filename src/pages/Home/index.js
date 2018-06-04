@@ -22,7 +22,6 @@ class Home extends React.Component {
     }
 }
 
-const HomeView = styled.div`
-`
+const HomeView = styled.div``
 
 export default Home

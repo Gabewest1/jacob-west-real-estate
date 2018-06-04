@@ -18,7 +18,6 @@ class ContactPage extends React.Component {
 }
 
 const ContactPageView = styled.div`
-    background: white;
     width: 100%;
     display: flex;
     flex-direction: column;

@@ -9,7 +9,7 @@ class Navbar extends React.Component {
 
     render() {
         let { isExpanded } = this.state
-        console.log(isExpanded)
+
         return (
             <NavbarView {...this.props}>
                 <NavbarContainer>
@@ -70,6 +70,12 @@ const NavLinksContainer = styled.div`
     display: flex;
     width: 60%;
     height: 73px;
+    position: relative;
+    top: 2px;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
 `
 const NavLinkWrapper = styled.div`
     width: 100%;
@@ -99,7 +105,7 @@ const NavbarView = styled.div`
     height 73px;
     width: 100%;
     background-color: #343a40;
-    border-bottom: #3e4750 3px solid;    
+    border-bottom: #3e4750 2px solid;    
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -95,7 +95,6 @@ const AboutTextContainer = styled.div`
 
 const AboutView = styled.div`
     ${PAGE_PADDING}
-    background: white;
 `
 
 export default About

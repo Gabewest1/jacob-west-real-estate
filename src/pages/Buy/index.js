@@ -168,7 +168,6 @@ const Body = styled.div`
 `
 const BuyView = styled.div`
     ${PAGE_PADDING};
-    background: white;
 `
 
 export default Buy

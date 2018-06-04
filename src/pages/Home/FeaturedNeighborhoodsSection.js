@@ -11,7 +11,7 @@ class FeaturedNeighborhoodsSection extends React.Component {
                     <SectionHeader blueWord="Featured" greyWord="Neighborhoods" />
 
                     <p>
-                        Property ownership can be a big deal, especially in todays&#39; climate.
+                        These should scroll sideways instead of stacking on mobile
                     </p>
 
                     <HoodsContainer>
@@ -63,7 +63,6 @@ const FeaturedNeighborhoodsView = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    background: white;
     padding-top: 180px;
     p{
         text-align: center;

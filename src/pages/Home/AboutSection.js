@@ -65,7 +65,6 @@ const AboutView = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: white;
     padding-top: 80px;
     @media (max-width: 1000px) {
         padding-top: 45px;

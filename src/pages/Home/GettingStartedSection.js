@@ -91,7 +91,6 @@ const GettingStartedView = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
-    background: white;
     padding-top: 170px;
     h3{
         margin-top: 46px;

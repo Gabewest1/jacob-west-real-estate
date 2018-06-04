@@ -140,8 +140,8 @@ const MlsContainer = styled.div`
     width: 100%;
     box-sizing: border-box;
     padding: 1px;
-    background: #9090904a;
-    border: #c4c4c469 1px solid;
+    background: #86868657;
+    border: #ffffff63 1px solid;
     
     @media (max-width: 1000px) {
         padding: 1px;
@@ -194,7 +194,7 @@ const Input = styled.input`
 
 const MlsFilterOptions = styled.div`
     width: 300px;
-    background-color: ${({ isActive }) => isActive ? "lightgray" : "#ececec"};
+    background: ${({ isActive }) => isActive ? "lightgray" : "linear-gradient(#f1f1f1, #c1c1c1)"};
     color: rgba(113, 113, 113, 0.832);
     border: rgba(170, 170, 170, 0.6) 1px solid; 
     border-left: none;   
@@ -242,7 +242,7 @@ const MlsSubmitButton = styled.button`
     height: 47px;
     color: rgb(255, 255, 255);
     background: #28a745;
-    background: #23a962;
+    background: #23925f;
     border: #28803b 1px solid;
     font-weight: 500;
     font-size: 16px;
