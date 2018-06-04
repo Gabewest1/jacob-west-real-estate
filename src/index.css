@@ -5,6 +5,13 @@ body {
   
 }
 
+* {
+  font-family: 'Montserrat', sans-serif !important;
+  font-family: 'Raleway', sans-serif !important;
+  /* font-family: 'Source Sans Pro', sans-serif !important; */
+  /* font-family: 'Segoe UI' !important; */
+}
+
 h1, h3 {
   color: #525252;
   color: #22262b;
@@ -19,10 +26,3 @@ p {
     font-weight: 300;
 }
 
-* {
-  font-family: 'Segoe UI' !important;
-  /* font-family: 'Raleway', sans-serif !important; */
-  /* font-family: 'Roboto', sans-serif !important; */
-  /* font-family: 'Ubuntu', sans-serif !important; */
-  /* font-family: 'Lato', sans-serif !important; */
-}

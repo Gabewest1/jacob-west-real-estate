@@ -131,9 +131,9 @@ const PhoneNumberLinkToContact = styled(Link)`
     text-decoration: none;
     position: relative;
     top: 2px;
-    font-size: 28px;
+    font-size: 32px;
     letter-spacing: -0.08rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.75);
     @media (max-width: 1000px) {
         display: none;
     }

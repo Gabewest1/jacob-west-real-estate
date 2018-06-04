@@ -26,7 +26,7 @@ const HeroView = styled.div`
     height: 100vh;
     background: url('/assets/heroimagemain.jpg') no-repeat;
     background-size: 149%;
-    background-position: 0% 55%;
+    background-position: 0% 44%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,7 @@ const HeroView = styled.div`
 const HeroOverlay = styled.div`
     width: 100%;
     height: 100vh;
-    background: #0d0e157f;
+    background: #0d0e1570;
     position: absolute;
 `
 
@@ -53,7 +53,7 @@ const HeroHeader = styled.div`
     // font-family: 'Raleway', sans-serif;
     // font-family: 'Segoe UI';
     
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: -0.1rem;
     position: relative;
     top: 6px;
@@ -66,7 +66,7 @@ const HeroHeader = styled.div`
 `
 
 const BoldenWord = styled.span`
-    font-weight: 400;
+    font-weight: 500;
     color: rgb(251, 251, 251);
 `
 

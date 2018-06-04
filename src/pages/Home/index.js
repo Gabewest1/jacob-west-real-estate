@@ -15,7 +15,7 @@ class Home extends React.Component {
                 <AboutSection />
                 <TestimonialsSection />
                 <FeaturedNeighborhoodsSection />
-                <GettingStartedSection />
+                {/* <GettingStartedSection /> */}
                 <ContactSection />
             </HomeView>
         )

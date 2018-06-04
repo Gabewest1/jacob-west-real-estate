@@ -140,7 +140,7 @@ const MlsContainer = styled.div`
     width: 100%;
     box-sizing: border-box;
     padding: 1px;
-    background: none;
+    background: #9090904a;
     border: #c4c4c469 1px solid;
     
     @media (max-width: 1000px) {
