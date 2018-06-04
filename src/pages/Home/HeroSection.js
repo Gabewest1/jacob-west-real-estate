@@ -50,6 +50,8 @@ const HeroOverlay = styled.div`
     height: 100vh;
     background: #0d0e1570;
     position: absolute;
+    top: 0;
+    left: 0;
 `
 
 const HeroHeader = styled.div`

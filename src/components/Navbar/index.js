@@ -7,56 +7,64 @@ class Navbar extends React.Component {
         isExpanded: false,
     }
 
+    closeMenuOnPageChange(){
+        this.setState({
+            isExpanded: false
+        })
+    }
+
     render() {
         let { isExpanded } = this.state
 
         return (
             <NavbarView {...this.props}>
                 <NavbarContainer>
-                    <LogoLinkToHome to="/">
+                    <LogoLinkToHome to="/" onClick={() => {this.closeMenuOnPageChange()}}>
                         <Logo src="/assets/logo.svg" />
                     </LogoLinkToHome>
 
                     <NavLinksContainer isExpanded={ isExpanded }>
                         
                         <NavLinkWrapper>
-                            <NavLink to="/PropertySearch">
+                            <NavLink to="/PropertySearch" onClick={() => {this.closeMenuOnPageChange()}}>
                                 Property Search
                             </NavLink>
                         </NavLinkWrapper>
                         
                         <NavLinkWrapper>
-                            <NavLink to="/Buy">
+                            <NavLink to="/Buy" onClick={() => {this.closeMenuOnPageChange()}}>
                                 Buyers
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/Sell">
+                            <NavLink to="/Sell" onClick={() => {this.closeMenuOnPageChange()}}>
                                 Sellers
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/About">
+                            <NavLink to="/About" onClick={() => {this.closeMenuOnPageChange()}}>
                                 About Us
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/Testimonials">
+                            <NavLink to="/Testimonials" onClick={() => {this.closeMenuOnPageChange()}}>
                                 Testimonials
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/Contact">
+                            <NavLink to="/Contact" onClick={() => {this.closeMenuOnPageChange()}}>
                                 Contact
                             </NavLink>
                         </NavLinkWrapper>
                     </NavLinksContainer>
 
-                    <PhoneNumberLinkToContact to="contact">512 669 9649</PhoneNumberLinkToContact>
+                    <PhoneNumberLinkToContact to="contact" onClick={() => {this.closeMenuOnPageChange()}}>
+                        512 669 9649
+                    </PhoneNumberLinkToContact>
                 </NavbarContainer>
                 <NavMenuExpander onClick={() => this.setState({ isExpanded: !isExpanded })}>
                     <Hamburger src="/assets/hamburger.svg" />
@@ -73,7 +81,7 @@ const NavLinksContainer = styled.div`
     height: 73px;
     position: relative;
     top: 2px;
-    transition: all .3s ease-in;    
+    transition: all .2s ease-in;    
 
     @media (max-width: 1100px) {
         flex-direction: column;
@@ -83,7 +91,7 @@ const NavLinksContainer = styled.div`
         position: absolute;
         right: 0;
         width: 100%;
-        top: 59px;
+        top: 58px;
     }
 `
 const NavLinkWrapper = styled.div`
@@ -109,6 +117,11 @@ const NavLinkWrapper = styled.div`
 const NavLink = styled(Link)`
     text-decoration: none;
     white-space: nowrap;
+    width: 100%;
+    height: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 13px;
     padding: 1em;
     box-sizing: border-box;

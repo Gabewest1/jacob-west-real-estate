@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { BLUE } from "../../constants"
 
 class ContactForm extends React.Component {
     render() {
@@ -42,8 +41,7 @@ const TextArea = styled.textarea`
 const SubmitButton = styled.button`
     width: 140px;
     height: 40px;
-    background: ${BLUE};
-    background: #1eb978;
+    background: #23925f;
     border: none;
     color: white;
     font-size: 14px;

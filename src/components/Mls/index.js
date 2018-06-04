@@ -241,9 +241,8 @@ const MlsSubmitButton = styled.button`
     width: 40%;
     height: 47px;
     color: rgb(255, 255, 255);
-    background: #28a745;
     background: #23925f;
-    border: #28803b 1px solid;
+    border: #137b4b 1px solid;
     font-weight: 500;
     font-size: 16px;
     // font-family: 'Segoe UI';
