@@ -83,6 +83,7 @@ const ClientImgWrapper = styled.div`
     @media (max-width: 1000px) {
         width: 72%;
         border-radius: 50%;
+        top: 0px;
     }
 `
 

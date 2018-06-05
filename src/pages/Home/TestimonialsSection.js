@@ -51,6 +51,7 @@ const TestimonialsView = styled.div`
 const TestimonialsAccentHome = styled.div`
     width: 30px;
     height: 3px;
+    margin-top: 20px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 50px;
 `
