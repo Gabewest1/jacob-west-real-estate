@@ -176,7 +176,6 @@ const ListingInfo = styled.div`
         margin-top: 10px;
         color: #01a97a !important;
         line-height: 1em;
-        
     }
 `
 
@@ -211,12 +210,10 @@ const Wrapper = styled.div``
 const Body = styled.div`
     display: flex;
     flex-direction: column;
-    background: green;
     
     h4{
         font-weight: 600;
         color: #2d3031;
-        margin-top: 0px;
     }
 
     @media (min-width: 768px) {
@@ -230,14 +227,14 @@ const Body = styled.div`
 `
 
 const SellPageContactForm = styled(ContactForm)`
-    margin-top: 22px;
+    // margin-top: 22px;
 `
 
 const SellView = styled.div`
     padding: ${PAGE_PADDING};
 
     @media (max-width: 1000px) {
-        ${PAGE_PADDING_MOBILE};
+        padding: ${PAGE_PADDING_MOBILE};
     }
 `
 

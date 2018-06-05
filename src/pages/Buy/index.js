@@ -149,7 +149,6 @@ const Wrapper = styled.div``
 const Body = styled.div`
     display: flex;
     flex-direction: column;
-    background: green;
 
     h4{
         font-weight: 600;
@@ -164,7 +163,7 @@ const Body = styled.div`
 `
 const BuyView = styled.div`
     padding: ${PAGE_PADDING};
-
+    
     @media (max-width: 1000px) {
         padding: ${PAGE_PADDING_MOBILE};
     }

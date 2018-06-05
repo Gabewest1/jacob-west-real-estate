@@ -86,7 +86,7 @@ const TestimonialsView = styled.div`
     padding: ${PAGE_PADDING};
 
     @media (max-width: 1000px) {
-        ${PAGE_PADDING_MOBILE};
+        padding: ${PAGE_PADDING_MOBILE};
     }
 `
 

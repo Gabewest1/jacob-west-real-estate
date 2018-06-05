@@ -31,9 +31,11 @@ const SectionHeaderContainer = styled.div`
     align-items: center;
     text-align: center;
     white-space: ${({ noWrap }) => noWrap ? "nowrap" : "wrap"};
-    
+    padding-bottom: 40px;
+
     @media (max-width: 1000px) {
         justify-content: center;
+        padding-bottom: 20px;
     }
 `
 
