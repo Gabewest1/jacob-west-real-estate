@@ -7,10 +7,10 @@ class ContactForm extends React.Component {
             <ContactFormView {...this.props}>
                 <label>Name</label>
                 <Input name="name" placeholder="Name" />
-                
+
                 <label>Phone Number</label>
                 <Input name="number" placeholder="Number" />
-                
+
                 <label>Message</label>
                 <TextArea name="message" placeholder="Message" />
                 <SubmitButton>Contact</SubmitButton>
@@ -24,8 +24,8 @@ const Input = styled.input`
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background: #f6f6f6;
     border: #ddd 1px solid;
+    -webkit-appearance: none;
 `
 
 const TextArea = styled.textarea`
@@ -34,9 +34,9 @@ const TextArea = styled.textarea`
     height: 130px;
     margin: 0;
     box-sizing: border-box;
-    background: #f6f6f6;
     border: #ddd 1px solid;
     resize: none;
+    -webkit-appearance: none;
 `
 const SubmitButton = styled.button`
     width: 140px;
@@ -56,6 +56,7 @@ const ContactFormView = styled.form`
     label{
         color: #6f6f6f;
         font-size: 14px;
+        font-weight: 500;
         position: relative;
         left: 7px;
         top: 6px;

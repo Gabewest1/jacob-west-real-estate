@@ -245,7 +245,6 @@ const MlsSubmitButton = styled.button`
     border: #137b4b 1px solid;
     font-weight: 500;
     font-size: 16px;
-    // font-family: 'Segoe UI';
     
     @media (max-width: 1000px) {
         width: 100%;
