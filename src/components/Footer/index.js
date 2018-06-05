@@ -27,8 +27,8 @@ const Footer = props => (
 const FooterView = styled.div`
     width: 100%;
     height: 110px;
-    background: #182a3c;
-    border-top: #2A3E52 2px solid;
+    background: #234261;
+    border-top: #336482 2px solid;
     display: flex;
     align-items: center;
     justify-content: center;
