@@ -101,7 +101,6 @@ const Body = styled.div`
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    margin-top: 11px;
 
     @media (min-width: 768px) {
         flex-direction: row;

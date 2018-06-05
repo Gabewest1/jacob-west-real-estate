@@ -39,6 +39,7 @@ const HeroView = styled.div`
 
 const HeroContainer = styled.div`
     width: 76%;
+    max-width: 1024px;    
 
     @media (max-width: 1000px) {
         width: 80%;

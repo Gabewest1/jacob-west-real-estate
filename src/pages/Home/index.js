@@ -22,6 +22,12 @@ class Home extends React.Component {
     }
 }
 
-const HomeView = styled.div``
+const HomeView = styled.div`
+    padding-bottom: 60px;
+    
+    @media(max-width: 1000px){
+        padding-bottom: 40px;
+    }
+`
 
 export default Home

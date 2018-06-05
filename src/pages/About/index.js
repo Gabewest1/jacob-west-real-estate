@@ -57,7 +57,7 @@ class About extends React.Component {
 }
 
 const AboutImgAndTextContainer = styled.div`
-    width: 100%;
+    width: 100%
     display: flex;
     justify-content: space-between;
     
@@ -70,7 +70,7 @@ const AboutImgAndTextContainer = styled.div`
 const ClientImgWrapper = styled.div`
     flex-basis: 28%;
     position: relative;
-    top: 58px;
+    top: 42px;
 
     img{
         width: 100%;

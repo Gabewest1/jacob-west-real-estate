@@ -147,6 +147,7 @@ const NavbarView = styled.div`
 `
 const NavbarContainer = styled.div`
     width: 76%;
+    max-width: 1024px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
