@@ -66,10 +66,8 @@ const AboutView = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
 
     @media (max-width: 1000px) {
-        padding-top: 20px;
     }
 `
 
@@ -77,7 +75,6 @@ const AboutImgAndTextContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
     align-items: flex-start;
     
     @media (max-width: 1000px) {
