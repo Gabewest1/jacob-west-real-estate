@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import SectionHeader from "../../components/SectionHeader"
 import SiteContainer from "../../components/SiteContainer/"
+import { PagePaddingTopDesktop, PagePaddingTopMobile } from "../../constants/"
 
 class AboutSection extends React.Component {
     render() {
@@ -9,7 +10,7 @@ class AboutSection extends React.Component {
             <AboutView>
                 <SiteContainer>
                     <SectionHeader blueWord="About" greyWord="Us" noWrap />
-                    
+
                     <AboutImgAndTextContainer>
                         <ClientImgWrapper>
                             <ClientImg src="/assets/jacob2.jpg" />
@@ -65,9 +66,10 @@ const AboutView = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 70px;
+
     @media (max-width: 1000px) {
-        padding-top: 45px;
+        padding-top: 20px;
     }
 `
 
@@ -81,6 +83,7 @@ const AboutImgAndTextContainer = styled.div`
     @media (max-width: 1000px) {
         flex-direction: column-reverse;
         align-items: center;
+        margin-top: 0px;
     }
 `
 

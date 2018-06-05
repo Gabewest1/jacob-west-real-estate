@@ -27,7 +27,8 @@ const Footer = props => (
 const FooterView = styled.div`
     width: 100%;
     height: 110px;
-    background: #2d4256;
+    background: #182a3c;
+    border-top: #2A3E52 2px solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +47,7 @@ const FooterContainer = styled.div`
 
 const Copyright = styled.div`
     font-size: 12px;
-    color: rgb(101, 130, 167);
+    color: rgba(101, 130, 167, 0.39);
     text-align: center;
 `
 

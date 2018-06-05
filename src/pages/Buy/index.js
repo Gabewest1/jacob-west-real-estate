@@ -6,14 +6,14 @@ import SectionSubHeader from "../../components/SectionSubHeader"
 import ContactForm from "../../components/ContactFormAndInfo/ContactForm"
 import SiteContainer from "../../components/SiteContainer"
 
-import { PAGE_PADDING } from "../../constants"
+import { PAGE_PADDING, PAGE_PADDING_MOBILE } from "../../constants"
 
 class Buy extends React.Component {
     render() {
         return (
             <BuyView {...this.props}>
                 <SiteContainer>
-                    <SectionHeaderNoMargin blueWord="Buyers" />
+                    <SectionHeader blueWord="Buyers" />
 
                     <Body>
                         <Wrapper>
@@ -88,7 +88,7 @@ const ContactMottoContainer = styled.div`
 
 const MottoCard = styled.div`
     width: 48%;
-    height: 320px;
+    height: 314px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -138,10 +138,6 @@ const LinkToMottoWebsite = styled.a`
     margin-top: 20px;
 `
 
-const SectionHeaderNoMargin = styled(SectionHeader)`
-    height: 60px;
-    margin-top: 10px;
-`
 const GettingStarted = styled.div``
 const BuyingProcess = styled.div`
 
@@ -151,9 +147,9 @@ const BuyingProcess = styled.div`
 `
 const Wrapper = styled.div``
 const Body = styled.div`
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    background: green;
 
     h4{
         font-weight: 600;
@@ -161,13 +157,17 @@ const Body = styled.div`
     }
 
     @media (min-width: 768px) {
-        flex-direction: row;
-        justify-content: space-between;
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
 `
 const BuyView = styled.div`
-    ${PAGE_PADDING};
+    padding: ${PAGE_PADDING};
+
+    @media (max-width: 1000px) {
+        padding: ${PAGE_PADDING_MOBILE};
+    }
 `
 
 export default Buy

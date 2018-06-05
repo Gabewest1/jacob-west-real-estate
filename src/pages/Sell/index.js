@@ -6,7 +6,8 @@ import SiteContainer from "../../components/SiteContainer"
 import SectionSubHeader from "../../components/SectionSubHeader"
 import ContactForm from "../../components/ContactFormAndInfo/ContactForm"
 import listingsData from "./listingsData"
-import { PAGE_PADDING } from "../../constants"
+import { PAGE_PADDING, PAGE_PADDING_MOBILE } from "../../constants"
+
 
 class Sell extends React.Component {
     render() {
@@ -41,7 +42,7 @@ class Sell extends React.Component {
         return (
             <SellView {...this.props}>
                 <SiteContainer>
-                    <SectionHeaderNoMargin blueWord="Sellers" />
+                    <SectionHeader blueWord="Sellers" />
 
                     {/* <SectionSubHeader>This is text for the sub header</SectionSubHeader> */}
 
@@ -199,14 +200,6 @@ const MlsNumber = styled.p`
     border-top: #eee 1px solid;
     padding-top: 2px;
 `
-
-const SectionHeaderNoMargin = styled(SectionHeader)`
-    height: 60px;
-
-    * {
-        margin: 0;
-    }
-`
 const GettingStarted = styled.div``
 const WhatsMyHomeWorth = styled.div`
 
@@ -218,8 +211,8 @@ const Wrapper = styled.div``
 const Body = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
-
+    background: green;
+    
     h4{
         font-weight: 600;
         color: #2d3031;
@@ -241,8 +234,11 @@ const SellPageContactForm = styled(ContactForm)`
 `
 
 const SellView = styled.div`
-    ${PAGE_PADDING}
-    background: white;
+    padding: ${PAGE_PADDING};
+
+    @media (max-width: 1000px) {
+        ${PAGE_PADDING_MOBILE};
+    }
 `
 
 

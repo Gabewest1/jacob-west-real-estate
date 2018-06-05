@@ -3,15 +3,14 @@ import styled from "styled-components"
 
 import SectionHeader from "../../components/SectionHeader"
 import SiteContainer from "../../components/SiteContainer/"
-
-import { PAGE_PADDING } from "../../constants"
+import { PAGE_PADDING, PAGE_PADDING_MOBILE } from "../../constants"
 
 class About extends React.Component {
     render() {
         return (
             <AboutView {...this.props}>
                 <SiteContainer>
-                    <SectionHeader blueWord="About" greyWord="Us" noWrap={false} />
+                    <SectionHeader blueWord="About" greyWord="Us" noWrap />
 
                     <AboutImgAndTextContainer>
                         <AboutTextContainer>
@@ -45,8 +44,9 @@ class About extends React.Component {
                             </p>
 
                         </AboutTextContainer>
+
                         <ClientImgWrapper>
-                            <ClientImg src="/assets/jacob2.jpg" />
+                            <img src="/assets/jacob2.jpg" alt="jacob west" />
                         </ClientImgWrapper>
                     </AboutImgAndTextContainer>
 
@@ -60,41 +60,48 @@ const AboutImgAndTextContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;    
+    
     @media (max-width: 1000px) {
-        flex-direction: column-reverse;
         align-items: center;
+        flex-direction: column-reverse;
     }
 `
 
 const ClientImgWrapper = styled.div`
-    width: 284px;
-    @media (max-width: 1000px) {
-        width: 70%;
-        margin-top: -32px;
-        border-radius: 50%;
-    }
-`
+    flex-basis: 28%;
+    position: relative;
+    top: 58px;
 
-const ClientImg = styled.img`
-    width: 100%;
+    img{
+        width: 100%;
+        
+        @media (max-width: 1000px) {
+            border-radius: 50%;
+        }
+    }
+
     @media (max-width: 1000px) {
+        width: 72%;
         border-radius: 50%;
     }
 `
 
 const AboutTextContainer = styled.div`
-    width: 100%;
+    flex-basis: 69%;
+
     @media (max-width: 1000px) {
         border-radius: 50%;
         width: 100%;
-        // text-align: justify;
         margin-top: 10px;
     }
 `
 
 const AboutView = styled.div`
-    ${PAGE_PADDING}
+     padding: ${PAGE_PADDING};
+
+    @media (max-width: 1000px) {
+        padding: ${PAGE_PADDING_MOBILE};
+    }
 `
 
 export default About

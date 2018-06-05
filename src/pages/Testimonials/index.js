@@ -6,7 +6,7 @@ import SectionSubHeader from "../../components/SectionSubHeader"
 import SiteContainer from "../../components/SiteContainer"
 
 import testimonialsData from "./testimonialsData"
-import { GREY, PAGE_PADDING } from "../../constants"
+import { GREY, PAGE_PADDING, PAGE_PADDING_MOBILE } from "../../constants"
 
 class Testimonials extends React.Component {
     render() {
@@ -83,8 +83,11 @@ const QuoteView = styled.div`
 `
 
 const TestimonialsView = styled.div`
-    ${PAGE_PADDING}
-    background: white;
+    padding: ${PAGE_PADDING};
+
+    @media (max-width: 1000px) {
+        ${PAGE_PADDING_MOBILE};
+    }
 `
 
 export default Testimonials
