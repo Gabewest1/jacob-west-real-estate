@@ -7,7 +7,7 @@ class Navbar extends React.Component {
         isExpanded: false,
     }
 
-    closeMenuOnPageChange(){
+    closeMobileNavMenuOnPageChange(){
         this.setState({
             isExpanded: false
         })
@@ -19,50 +19,50 @@ class Navbar extends React.Component {
         return (
             <NavbarView {...this.props}>
                 <NavbarContainer>
-                    <LogoLinkToHome to="/" onClick={() => {this.closeMenuOnPageChange()}}>
+                    <LogoLinkToHome to="/" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                         <Logo src="/assets/logo.svg" />
                     </LogoLinkToHome>
 
                     <NavLinksContainer isExpanded={ isExpanded }>
                         
                         <NavLinkWrapper>
-                            <NavLink to="/PropertySearch" onClick={() => {this.closeMenuOnPageChange()}}>
+                            <NavLink to="/property-search" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                                 Property Search
                             </NavLink>
                         </NavLinkWrapper>
                         
                         <NavLinkWrapper>
-                            <NavLink to="/Buy" onClick={() => {this.closeMenuOnPageChange()}}>
+                            <NavLink to="/buy" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                                 Buyers
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/Sell" onClick={() => {this.closeMenuOnPageChange()}}>
+                            <NavLink to="/sell" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                                 Sellers
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/About" onClick={() => {this.closeMenuOnPageChange()}}>
+                            <NavLink to="/about" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                                 About Us
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/Testimonials" onClick={() => {this.closeMenuOnPageChange()}}>
+                            <NavLink to="/testimonials" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                                 Testimonials
                             </NavLink>
                         </NavLinkWrapper>
 
                         <NavLinkWrapper>
-                            <NavLink to="/Contact" onClick={() => {this.closeMenuOnPageChange()}}>
+                            <NavLink to="/Contact" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                                 Contact
                             </NavLink>
                         </NavLinkWrapper>
                     </NavLinksContainer>
 
-                    <PhoneNumberLinkToContact to="contact" onClick={() => {this.closeMenuOnPageChange()}}>
+                    <PhoneNumberLinkToContact to="/Contact" onClick={() => {this.closeMobileNavMenuOnPageChange()}}>
                         512 669 9649
                     </PhoneNumberLinkToContact>
                 </NavbarContainer>

@@ -11,7 +11,7 @@ class HeroSection extends React.Component {
                     <HeroHeader>
                         The search for your new <BoldenWord>home </BoldenWord>starts here.
                     </HeroHeader>
-                    <Mls />
+                    <Mls pageId="hero" />
                 </HeroContainer>
             </HeroView>
         )
