@@ -2,6 +2,12 @@ import React from "react"
 import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
+const Markers = () => [
+    { lat: -34.397, lng: 150.644 },
+    { lat: -34.497, lng: 150.644 },
+    { lat: -34.697, lng: 150.644 }
+].map(marker => <Marker position={{ lat: marker.lat, lng: marker.lng }} />)
+
 const MyMapComponent = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
@@ -17,6 +23,7 @@ const MyMapComponent = compose(
         defaultCenter={{ lat: -34.397, lng: 150.644 }}
         >
         {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
+        <Markers/>
     </GoogleMap>
 )
 
@@ -24,6 +31,7 @@ class Map extends React.Component {
     render() {
         return (
             <MyMapComponent />
+            
         )
     }
 }

@@ -10,14 +10,20 @@ import Map from "./map"
 
 class PropertySearch extends React.Component {
     render() {
-       
         return (
             <PropertySearchView {...this.props} id="property-search">
                 <SiteContainer>
                     <SectionHeader blueWord="Property" greyWord="Search" />
+                    <h3>Lorem Ipsum Dolor Sit Amet</h3>
+
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, by injected
+                        humour, or randomised words which don't look even slightly believable.
+                    </p>
                     <Mls pageId="property-search" />
                     <MapAndListContainer>
-                        <Map />
+                        <PropSearchMap />
                     </MapAndListContainer>
                 </SiteContainer>
             </PropertySearchView>
@@ -28,10 +34,20 @@ class PropertySearch extends React.Component {
 const PropertySearchView = styled.div`
     padding: ${PAGE_PADDING};
 
+    h3{
+        align-self: flex-start;
+    }
+
     @media (max-width: 1000px) {
         padding: ${PAGE_PADDING_MOBILE};
     }
 `
-const MapAndListContainer = styled.div``
+const MapAndListContainer = styled.div`
+    width: 100%;
+    margin-top: 20px;
+`
+
+const PropSearchMap = styled(Map)`
+`
 
 export default PropertySearch
