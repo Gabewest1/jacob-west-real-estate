@@ -5,8 +5,9 @@ import SectionSubHeader from "../../components/SectionSubHeader"
 import Mls from "../../components/Mls"
 import ContactForm from "../../components/ContactFormAndInfo/ContactForm"
 import SiteContainer from "../../components/SiteContainer"
-import { PAGE_PADDING, PAGE_PADDING_MOBILE } from "../../constants"
+import ListingsList from "../../components/ListingsList"
 import Map from "./map"
+import { PAGE_PADDING, PAGE_PADDING_MOBILE } from "../../constants"
 
 class PropertySearch extends React.Component {
     render() {
@@ -24,6 +25,8 @@ class PropertySearch extends React.Component {
                     <Mls pageId="property-search" />
                     <MapAndListContainer>
                         <PropSearchMap />
+
+                        <ListingsList mapListings />
                     </MapAndListContainer>
                 </SiteContainer>
             </PropertySearchView>

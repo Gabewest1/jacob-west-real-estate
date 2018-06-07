@@ -1,0 +1,52 @@
+const data = [
+    {
+        lat: 30.511164,
+        lng: -97.648347,
+        img: "/assets/cedarpark.png",
+        address1: "4075 Bubby Drive",
+        address2: "Austin, TX 76530",
+        bedrooms: 4,
+        bathrooms: 3,
+        sqft: 1670,
+        price: "$198,000",
+        mls: "7313138",
+    },
+    {
+        lat: 30.510985,
+        lng: -97.648347,
+        img: "/assets/pflug.png",
+        address1: "3602 Tamarack TRL",
+        address2: "Austin, TX  78727",
+        bedrooms: 2,
+        bathrooms: 4,
+        sqft: 1670,
+        price: "$155,000",
+        mls: 7313138,
+    },
+    {
+        lat: 30.511342,
+        lng: -97.648347,
+        img: "/assets/georgetown.png",
+        address1: "237 J E Brown LN",
+        address2: "Jarrell, TX  76537",
+        bedrooms: 4,
+        bathrooms: 6,
+        sqft: 1670,
+        price: "$256,000",
+        mls: 7313138,
+    },
+    {
+        lat: 30.511342,
+        lng: -97.648347,
+        img: "/assets/austin.png",
+        address1: "237 J E Brown LN",
+        address2: "Jarrell, TX  76537",
+        bedrooms: 4,
+        bathrooms: 6,
+        sqft: 1670,
+        price: "$256,000",
+        mls: 7313138,
+    }
+]
+
+export default data

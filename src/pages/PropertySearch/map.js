@@ -1,12 +1,9 @@
 import React from "react"
 import { compose, withProps } from "recompose"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import marketData from "../../components/ListingsList/marketData"
 
-const Markers = () => [
-    { lat: -34.397, lng: 150.644 },
-    { lat: -34.497, lng: 150.644 },
-    { lat: -34.697, lng: 150.644 }
-].map(marker => <Marker position={{ lat: marker.lat, lng: marker.lng }} />)
+const Markers = () => marketData.map(home => <Marker position={{ lat: home.lat, lng: home.lng }} />)
 
 const MyMapComponent = compose(
     withProps({
@@ -19,10 +16,9 @@ const MyMapComponent = compose(
     withGoogleMap
 )(props =>
     <GoogleMap
-        defaultZoom={8}
-        defaultCenter={{ lat: -34.397, lng: 150.644 }}
-        >
-        {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
+        defaultZoom={13}
+        defaultCenter={{ lat: 30.511164, lng: -97.648347 }}>
+        {/* {props.isMarkerShown && <Marker position={{ lat: 30.511164, lng: -97.648347 }} />} */}
         <Markers/>
     </GoogleMap>
 )
@@ -31,7 +27,6 @@ class Map extends React.Component {
     render() {
         return (
             <MyMapComponent />
-            
         )
     }
 }
