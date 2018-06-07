@@ -9,7 +9,7 @@ class ContactSection extends React.Component {
         return (
             <ContactSectionView>
                 <SiteContainer>
-                    <SectionHeader blueWord="Contact" greyWord="Jacob" />
+                    <SectionHeader noWrap blueWord="Contact" greyWord="Jacob" />
 
                     <ContactFormAndInfoView />
                 </SiteContainer>
@@ -20,7 +20,6 @@ class ContactSection extends React.Component {
 
 const ContactSectionView = styled.div`
     width: 100%;
-    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;

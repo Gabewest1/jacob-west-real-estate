@@ -91,7 +91,6 @@ const GettingStartedView = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
-    background: white;
     padding-top: 170px;
     h3{
         margin-top: 46px;
@@ -155,47 +154,47 @@ const Icons = styled.div`
         font-weight: normal;
         text-decoration: inherit;
         font-size: 3.9em;
-        color: #e4e4e4;
-        background: #009688;
+        color: #303d48;
+        background: #ffffff;
         border-radius: 50%;
-        border: #008c7f 3px solid;
+        border: #303d48 2px solid;
     }
 `
 
 const WhyUsIcon = styled(Icons)`
     ::before{
-        content: "\\f0c0";
-        font-size: 3.45em;
-        padding: .178em;
+        content: "\f0c0";
+        font-size: 2.9em;
+        padding: 0.308em;
     }
 `
 
 const BuyIcon = styled(Icons)`
     ::before{
-        content: "\\f084";
-        padding: .12em .14em;
+        content: "\f084";
+        font-size: 3.55em;
+        padding: .17em .17em;
     }
 `
 
 const SellIcon = styled(Icons)`
     ::before{
-        content: "\\f015";
+        content: "\f015";
         padding: .12em .15em;
     }
 `
 
 const LearnMoreButton = styled(Link)`
-    box-shadow: 2px 2px 14px 0 rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     color: #5181d4;
     font-weight: 500;
     letter-spacing: 0.04rem;
-    font-size: 14px;
+    font-size: 10px;
     text-transform: uppercase;
-    font-feature-settings: "c2sc" 1;
+    // font-feature-settings: "c2sc" 1;
     border: #7386ff 1px solid;
-    width: 117px;
-    height: 29px;
+    width: 95px;
+    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;

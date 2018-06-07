@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import "font-awesome/css/font-awesome.min.css"
 
 import Baths from "./Baths"
 import Beds from "./Beds"
@@ -61,11 +62,11 @@ class Mls extends React.Component {
             </MlsContainer>
         )
     }
-    componentDidMount = () => {
-        document.getElementById("hero").addEventListener("click", this._removeActiveFilter)
+    componentDidMount = (...props) => {
+        document.getElementById(this.props.pageId).addEventListener("click", this._removeActiveFilter)
     }
-    componentWillUnmount = () => {
-        document.getElementById("hero").removeEventListener("click", this._removeActiveFilter)        
+    componentWillUnmount = (...props) => {
+        document.getElementById(this.props.pageId).removeEventListener("click", this._removeActiveFilter)        
     }
     _handleSubmit = (e) => {
         e.preventDefault()
@@ -87,8 +88,8 @@ class Mls extends React.Component {
             this.setState({ activeFilter: nextActiveFilter, editBox: { ...this.state.editBox, width, left } })
         }
     }
-    _removeActiveFilter = (e) => {
-        if (e.target === document.getElementById("hero")) {
+    _removeActiveFilter = (e, ...props) => {
+        if (e.target === document.getElementById(this.props.pageId)) {
             this.setState({ activeFilter: false })
         }
     }
@@ -138,10 +139,9 @@ const EditBox = styled.div`
 const MlsContainer = styled.div`
     width: 100%;
     box-sizing: border-box;
-    padding: 3px;
-    background: rgb(246, 246, 246);
-    border: black 1px solid;
-    border: #c4c4c4 1px solid;
+    padding: 1px;
+    background: #86868657;
+    border: #ffffff63 1px solid;
     
     @media (max-width: 1000px) {
         padding: 1px;
@@ -161,7 +161,7 @@ const MlsForm = styled.form`
 `
 
 const Input = styled.input`
-    min-width: ${SEARCH_BAR_WIDTH}px;
+    // min-width: ${SEARCH_BAR_WIDTH}px;
     width: 100%;
     height: 47px;
     box-sizing: border-box;
@@ -171,15 +171,16 @@ const Input = styled.input`
     border: #c4c4c4 1px solid;
     color: rgb(67, 67, 67);
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
     border-radius: 0px;
+    // font-family: 'Segoe UI';
+    
     background-clip: padding-box;
     
     &::-webkit-input-placeholder { 
         color: rgb(150, 150, 150);
         font-size: 15px;
         font-weight: 300;   
-        font-family: 'Roboto', sans-serif;
+        // font-family: 'Segoe UI';
 
         @media (max-width: 1000px) {
             font-size: 11px;
@@ -193,15 +194,14 @@ const Input = styled.input`
 
 const MlsFilterOptions = styled.div`
     width: 300px;
-    background-color: ${({ isActive }) => isActive ? "lightgray" : "#ececec"};
+    background: ${({ isActive }) => isActive ? "lightgray" : "#dbdbdb"};
     color: rgba(113, 113, 113, 0.832);
     border: rgba(170, 170, 170, 0.6) 1px solid; 
     border-left: none;   
     box-sizing: border-box;
     font-size: 13px;
     letter-spacing: 0.035rem;
-    font-weight: 400;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     outline: none;
     
     span {
@@ -212,6 +212,17 @@ const MlsFilterOptions = styled.div`
         width: 100%;
         position: relative;
         z-index: 1;
+        &::after{
+            font-family: FontAwesome;
+            font-size: 20px;
+            content: "\f0d7";
+            position: relative;
+            left: 52px;
+            top: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     @media (max-width: 1000px) {
@@ -227,15 +238,14 @@ const MlsSubmitButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 40%;
     height: 47px;
     color: rgb(255, 255, 255);
-    background-color:   #ea343e; 
-    border: #d44552 1px solid;
-    letter-spacing: 0.045rem;
-    font-weight: 400;
+    background: #23925f;
+    border: #137b4b 1px solid;
+    font-weight: 500;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    
     @media (max-width: 1000px) {
         width: 100%;
         letter-spacing: 0.025rem;

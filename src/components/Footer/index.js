@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import PageLinks from "../../components/PageLinks"
+import { Link } from "react-router-dom"
 
 const Footer = props => (
     <FooterView {...props}>
         <FooterContainer>
-            <FooterPageLinks />
 
             <Copyright>
                 Each Office Independently Owned and Operated.
@@ -13,11 +12,11 @@ const Footer = props => (
             </Copyright>
 
             <FooterLogosContainer>
-                <RemaxFooterLogoContainer>
+                <RemaxFooterLogoContainer href="https://www.remax.com/realestateagentoffice/georgetown-tx-78626-jacobwest-id30913746.html" target="blank">
                     <RemaxFooterLogo src="/assets/remax-logo-footer.svg" />
                 </RemaxFooterLogoContainer>
 
-                <MottoMortgageFooterLogoContainer>
+                <MottoMortgageFooterLogoContainer href="https://www.mottomortgage.com/" target="blank">
                     <MottoMortgageFooterLogo src="/assets/motto-mortgage.png" />
                 </MottoMortgageFooterLogoContainer>
             </FooterLogosContainer>
@@ -27,10 +26,13 @@ const Footer = props => (
 
 const FooterView = styled.div`
     width: 100%;
-    height: 190px;
-    background: #1e2021;
+    height: 110px;
+    background: #273a4c;
+    border-top: #336482 2px solid;
     display: flex;
+    align-items: center;
     justify-content: center;
+
     @media (max-width: 1000px) {
         height: 170px;
     }
@@ -40,46 +42,27 @@ const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    margin-top: 52px;
     width: 80%;
-    @media (max-width: 1000px) {
-        margin-top: 27px;
-    }
-`
-
-const FooterPageLinks = styled(PageLinks)`
-    letter-spacing: 0.01rem;
-    color: #b1b1b1;
-    width: 50%;
-    text-transform: uppercase;
-    @media (max-width: 1000px) {
-        display: none;
-    }
 `
 
 const Copyright = styled.div`
-    font-size: 11px;
-    color: rgba(101, 130, 167, 0.56);
+    font-size: 12px;
+    color: rgba(101, 130, 167, 0.39);
     text-align: center;
-    margin-top: 8px;
 `
 
 const FooterLogosContainer = styled.div`
     width: 232px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    @media (max-width: 1000px) {
-        padding-top: 14px;
-    }
+    margin-top: 10px;
 `
 
-const RemaxFooterLogoContainer = styled.div`
+const RemaxFooterLogoContainer = styled.a`
     width: 110px;
 `
 
-const MottoMortgageFooterLogoContainer = styled.div`
+const MottoMortgageFooterLogoContainer = styled.a`
     width: 109px;
 `
 

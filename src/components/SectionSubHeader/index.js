@@ -7,16 +7,20 @@ import { GREY } from "../../constants"
 const SectionSubHeaderView = styled.h3`
     text-align: center;
     position: relative;
-    padding-bottom: 20px;
-    
+    padding-bottom: 18px;
+    margin-top: 34px;
+    font-size: 17px;
+    letter-spacing: 0.01rem;
+    font-weight: 700;
+
     &:after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
         background: ${GREY};
-        width: 45px;
-        height: 3px;
+        width: 39px;
+        height: 2px;
         transform: translateX(-50%);
     }
 `

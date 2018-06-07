@@ -1,15 +1,17 @@
 import React from "react"
 import styled from "styled-components"
-import { BLUE } from "../../constants"
 
 class ContactForm extends React.Component {
     render() {
         return (
             <ContactFormView {...this.props}>
-                <Wrapper>
-                    <Input name="name" placeholder="Name" />
-                    <Input name="number" placeholder="Number" />
-                </Wrapper>
+                <label>Name</label>
+                <Input name="name" placeholder="Name" />
+
+                <label>Phone Number</label>
+                <Input name="number" placeholder="Number" />
+
+                <label>Message</label>
                 <TextArea name="message" placeholder="Message" />
                 <SubmitButton>Contact</SubmitButton>
             </ContactFormView>
@@ -22,8 +24,8 @@ const Input = styled.input`
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background: #f6f6f6;
     border: #ddd 1px solid;
+    -webkit-appearance: none;
 `
 
 const TextArea = styled.textarea`
@@ -32,60 +34,42 @@ const TextArea = styled.textarea`
     height: 130px;
     margin: 0;
     box-sizing: border-box;
-    background: #f6f6f6;
     border: #ddd 1px solid;
     resize: none;
+    -webkit-appearance: none;
 `
 const SubmitButton = styled.button`
-    width: 100%;
-    height: 45px;
-    background: ${BLUE};
-    background: #247b7a;
+    width: 140px;
+    height: 40px;
+    background: #23925f;
     border: none;
     color: white;
     font-size: 14px;
     letter-spacing: 0.05rem;
-    font-weight: 300;
-    font-feature-settings: "c2sc" 1;
+    font-weight: 500;
 `
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
 
-    ${Input} {
-        margin-bottom: 5px;
-    
-        &:last-child {
-            margin-bottom: 0px;
-        }
-    }
-    
-    @media (min-width: 480px) {
-        ${Input} {
-            margin: 0;
-            margin-right: 5px;
-        
-            &:last-child {
-                margin-right: 0px;
-            }
-        }
-
-        justify-content: space-between;
-        flex-direction: row;
-    }
-`
 const ContactFormView = styled.form`
     display: flex;
     flex-direction: column;
 
+    label{
+        color: #6f6f6f;
+        font-size: 14px;
+        font-weight: 500;
+        position: relative;
+        left: 7px;
+        top: 6px;
+    }
+
     * {
         // border: none;    
         border-radius: 2px;
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
     > *:last-child {
-        margin-top: 1px;
+        margin-top: 4px;
         margin-bottom: 0;
     }
 `

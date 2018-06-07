@@ -38,8 +38,8 @@ const TestimonialsView = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
-    background: white;
-    padding-top: 120px;
+    padding-top: 100px;
+    
     h3{
         color: #2b2b2b;
     }
@@ -51,6 +51,7 @@ const TestimonialsView = styled.div`
 const TestimonialsAccentHome = styled.div`
     width: 30px;
     height: 3px;
+    margin-top: 20px;
     background: rgba(0, 0, 0, 0.8);
     border-radius: 50px;
 `

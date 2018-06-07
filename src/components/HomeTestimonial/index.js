@@ -57,13 +57,14 @@ const TestimonialText = styled.p`
     padding: 0;
     margin: 0;
     font-style: italic;
+    font-size: 15px;
     @media (max-width: 1000px) {
         // text-align: justify;
     }
 `
 
 const TestimonialName = styled.h4`
-    letter-spacing: 0.02rem;
-    color: #303030;
+    color: #343434;
     margin-top: 10px;
+    border-top: #eee 1px solid;
 `

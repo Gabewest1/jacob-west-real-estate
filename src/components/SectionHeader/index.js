@@ -31,35 +31,47 @@ const SectionHeaderContainer = styled.div`
     align-items: center;
     text-align: center;
     white-space: ${({ noWrap }) => noWrap ? "nowrap" : "wrap"};
+    padding-bottom: 40px;
+
     @media (max-width: 1000px) {
         justify-content: center;
+        padding-bottom: 20px;
     }
 `
 
 const BlueText = styled.h1`
     font-weight: 300;
     font-size: 40px;
-    letter-spacing: 0.3rem;
-    text-transform: uppercase;  
+    letter-spacing: 0.07rem;
     text-align: center;
     color: #003e75;
     box-sizing: border-box;
     padding: 0 1em;
-    white-space: nowrap;
+    position: relative;
+    bottom: 2px;
+
     @media (max-width: 1000px) {
         padding: 0;
-        font-size: 28px;
+        font-size: 40px;
+    }
+
+    @media (max-width: 491px) {
+        padding: 0;
+        font-size: 30px;
     }
 `
 
 const GreyText = styled.span`
-    color: rgba(69, 69, 69, 0.9);  
+    color: rgba(69, 69, 69, 0.9);
+    text-transform: capitalize;
 `
 
 const BlueLine = styled.div`
     width: 50%;
     height: 1px;
-    background: rgb(46, 120, 181);
+    // background: rgb(46, 120, 181);
+    background: rgb(226, 226, 226);
+
     @media (max-width: 1000px) {
         display: none;
     }
@@ -68,7 +80,9 @@ const BlueLine = styled.div`
 const GreyLine = styled.div`
     width: 50%;
     height: 1px;
-    background: rgb(140, 140, 140);
+    // background: rgb(140, 140, 140);
+    background: rgb(226, 226, 226);
+    
     @media (max-width: 1000px) {
         display: none;
     }
