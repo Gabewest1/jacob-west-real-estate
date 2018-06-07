@@ -15,7 +15,7 @@ class Home extends React.Component {
                 <AboutSection />
                 <TestimonialsSection />
                 <FeaturedNeighborhoodsSection />
-                <GettingStartedSection />
+                {/* <GettingStartedSection /> */}
                 <ContactSection />
             </HomeView>
         )
@@ -23,6 +23,11 @@ class Home extends React.Component {
 }
 
 const HomeView = styled.div`
+    padding-bottom: 60px;
+    
+    @media(max-width: 1000px){
+        padding-bottom: 40px;
+    }
 `
 
 export default Home

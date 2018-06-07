@@ -70,10 +70,12 @@ const ContactDirectlyWrapper = styled.div``
 const ContactInfoContainer = styled.div`
     display: flex;
     flex-direction: column;
+
     @media (min-width: 610px) {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+
         ${ContactWrapper}:nth-child(odd) {
             flex-basis: 60%;
         }
@@ -82,6 +84,7 @@ const ContactInfoContainer = styled.div`
             flex-basis: 40%;
         }
     }
+
     @media (min-width: 768px) {
         margin-top: 79px;
         flex-direction: column;
@@ -89,6 +92,7 @@ const ContactInfoContainer = styled.div`
 `
 const LeaveMessageWrapper = styled.div`
     max-width: 500px;
+
     @media (min-width: 768px) {
         margin-right: 60px;
     }
@@ -97,15 +101,13 @@ const Body = styled.div`
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
-    padding-bottom: 100px;
-    margin-top: 40px;
+
     @media (min-width: 768px) {
         flex-direction: row;
     }
 `
 
 const ContactFormAndInfoView = styled.div`
-    background: white;
     width: 100%;
 `
 

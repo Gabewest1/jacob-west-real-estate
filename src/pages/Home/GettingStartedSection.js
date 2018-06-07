@@ -91,7 +91,6 @@ const GettingStartedView = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
-    background: white;
     padding-top: 170px;
     h3{
         margin-top: 46px;
@@ -155,10 +154,10 @@ const Icons = styled.div`
         font-weight: normal;
         text-decoration: inherit;
         font-size: 3.9em;
-        color: #009688;
+        color: #303d48;
         background: #ffffff;
         border-radius: 50%;
-        border: #049487 2px solid;
+        border: #303d48 2px solid;
     }
 `
 

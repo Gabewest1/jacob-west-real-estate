@@ -16,8 +16,4 @@ const SiteContainer = props => (
     <SiteContainerView {...props}>{props.children}</SiteContainerView>
 )
 
-SiteContainer.propTypes = {
-    children: PropTypes.element,
-}
-
 export default SiteContainer
